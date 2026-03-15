@@ -229,5 +229,523 @@
     "nome": "Mini Mundo",
     "categoria": "atração",
     "descricao": "Parque com miniaturas de construções mundiais em escala 1:24. Encantador para famílias e casais."
+  },
+  {
+    "cidade": "fortaleza",
+    "bairro": "Meireles",
+    "nome": "Coco Bambu Meireles",
+    "categoria": "restaurante",
+    "descricao": "O restaurante de frutos do mar mais famoso do Brasil. Lagosta, camarão e peixe no melhor de Fortaleza."
+  },
+  {
+    "cidade": "fortaleza",
+    "bairro": "Iracema",
+    "nome": "Café Guimarães",
+    "categoria": "cafe",
+    "descricao": "Cafeteria histórica no bairro Iracema com café cearense e tapioca de carne de sol. Imperdível."
+  },
+  {
+    "cidade": "fortaleza",
+    "bairro": "Iracema",
+    "nome": "Bar do Bosco Iracema",
+    "categoria": "bar",
+    "descricao": "Bar à beira-mar com caju, cajuína e forró ao vivo. A essência da noite cearense."
+  },
+  {
+    "cidade": "fortaleza",
+    "bairro": "Meireles",
+    "nome": "Praia de Meireles",
+    "categoria": "praia",
+    "descricao": "A praia urbana mais badalada de Fortaleza com quiosques, calçadão e pôr do sol espetacular."
+  },
+  {
+    "cidade": "fortaleza",
+    "bairro": "Centro",
+    "nome": "Centro Dragão do Mar",
+    "categoria": "atração",
+    "descricao": "Centro cultural com museu, teatro e bares ao ar livre. O coração cultural de Fortaleza."
+  },
+  {
+    "cidade": "jericoacoara",
+    "bairro": "Centro",
+    "nome": "Sunset Jeri",
+    "categoria": "bar",
+    "descricao": "Bar no topo da duna principal para ver o pôr do sol mais famoso do Ceará. Chegue cedo para garantir lugar."
+  },
+  {
+    "cidade": "jericoacoara",
+    "bairro": "Praia",
+    "nome": "Praia de Jericoacoara",
+    "categoria": "praia",
+    "descricao": "Praia selvagem dentro do Parque Nacional. Uma das mais bonitas do mundo segundo o New York Times."
+  },
+  {
+    "cidade": "jericoacoara",
+    "bairro": "Centro",
+    "nome": "Lagoa do Paraíso",
+    "categoria": "passeio",
+    "descricao": "Lagoa de água doce cercada por coqueiros com água cristalina. Passeio de buggy obrigatório."
+  },
+  {
+    "cidade": "brasília",
+    "bairro": "Asa Norte",
+    "nome": "Café Laço",
+    "categoria": "cafe",
+    "descricao": "O café favorito dos brasilienses no Asa Norte com pão de queijo e café especial mineiro."
+  },
+  {
+    "cidade": "brasília",
+    "bairro": "Lago Sul",
+    "nome": "Restaurante Antiquarius",
+    "categoria": "restaurante",
+    "descricao": "Alta gastronomia portuguesa no Lago Sul. Um dos mais premiados da capital federal."
+  },
+  {
+    "cidade": "brasília",
+    "bairro": "Asa Sul",
+    "nome": "Bar Beirute",
+    "categoria": "bar",
+    "descricao": "O bar mais histórico de Brasília desde 1966. Petiscos libaneses e chope gelado na CLS 109."
+  },
+  {
+    "cidade": "brasília",
+    "bairro": "Eixo Monumental",
+    "nome": "Catedral de Brasília",
+    "categoria": "atração",
+    "descricao": "Obra de Oscar Niemeyer com vitrais de Marianne Peretti. Arquitetura única no mundo."
+  },
+  {
+    "cidade": "brasília",
+    "bairro": "Eixo Monumental",
+    "nome": "Congresso Nacional",
+    "categoria": "passeio",
+    "descricao": "Visita gratuita ao Congresso Nacional com cúpulas invertidas. O coração da democracia brasileira."
+  },
+  {
+    "cidade": "manaus",
+    "bairro": "Centro",
+    "nome": "Restaurante Canto da Peixada",
+    "categoria": "restaurante",
+    "descricao": "O melhor restaurante de peixe da Amazônia. Tambaqui na brasa e caldeirada de pirarucu imperdíveis."
+  },
+  {
+    "cidade": "manaus",
+    "bairro": "Centro",
+    "nome": "Teatro Amazonas",
+    "categoria": "atração",
+    "descricao": "Ópera do século XIX construída no auge do ciclo da borracha. Visita obrigatória em Manaus."
+  },
+  {
+    "cidade": "manaus",
+    "bairro": "Ponta Negra",
+    "nome": "Bar Skina do Bode",
+    "categoria": "bar",
+    "descricao": "Bar famoso com vista para o Rio Negro. Petiscos amazônicos e ambiente descontraído em Ponta Negra."
+  },
+  {
+    "cidade": "manaus",
+    "bairro": "Centro",
+    "nome": "Mercado Municipal Adolpho Lisboa",
+    "categoria": "passeio",
+    "descricao": "Mercado histórico de 1882 com estrutura de ferro importada da Europa. Frutas, ervas e artesanato amazônicos."
+  },
+  {
+    "cidade": "manaus",
+    "bairro": "Encontro das Águas",
+    "nome": "Encontro das Águas",
+    "categoria": "atração",
+    "descricao": "Fenômeno natural onde o Rio Negro e o Solimões se encontram sem se misturar por 6km. Imperdível."
+  },
+  {
+    "cidade": "belém",
+    "bairro": "Cidade Velha",
+    "nome": "Mercado Ver-o-Peso",
+    "categoria": "atração",
+    "descricao": "O maior mercado ao ar livre das Américas com açaí, peixe e ervas amazônicas. Coração de Belém."
+  },
+  {
+    "cidade": "belém",
+    "bairro": "Batista Campos",
+    "nome": "Restaurante Remanso do Bosque",
+    "categoria": "restaurante",
+    "descricao": "Alta gastronomia paraense com pato no tucupi e tacacá. Chef renomado mundialmente."
+  },
+  {
+    "cidade": "belém",
+    "bairro": "Cidade Velha",
+    "nome": "Bar do Parque",
+    "categoria": "bar",
+    "descricao": "Bar tradicional no Praça da República com chopp e vista para o Theatro da Paz. Clássico belenense."
+  },
+  {
+    "cidade": "belém",
+    "bairro": "Umarizal",
+    "nome": "Mangal das Garças",
+    "categoria": "passeio",
+    "descricao": "Parque ecológico com borboletário, beija-flores e mirante sobre o Rio Guamá. Imperdível em Belém."
+  },
+  {
+    "cidade": "recife",
+    "bairro": "Olinda",
+    "nome": "Alto da Sé Olinda",
+    "categoria": "atração",
+    "descricao": "O ponto mais alto de Olinda com vista panorâmica de Recife e o mar. Patrimônio UNESCO e Carnaval famoso."
+  },
+  {
+    "cidade": "recife",
+    "bairro": "Boa Viagem",
+    "nome": "Casa de Sucos Recife",
+    "categoria": "cafe",
+    "descricao": "Sucos de frutas nordestinas como umbu, seriguela e graviola. Café da manhã recifense autêntico."
+  },
+  {
+    "cidade": "recife",
+    "bairro": "Recife Antigo",
+    "nome": "Parraxaxá",
+    "categoria": "restaurante",
+    "descricao": "O melhor restaurante de comida nordestina de Recife. Baião de dois e buchada de bode imperdíveis."
+  },
+  {
+    "cidade": "recife",
+    "bairro": "Recife Antigo",
+    "nome": "Cais do Sertão",
+    "categoria": "atração",
+    "descricao": "Museu interativo no Cais do Porto dedicado à cultura do Sertão Nordestino. Fascinante."
+  },
+  {
+    "cidade": "recife",
+    "bairro": "Boa Viagem",
+    "nome": "Praia de Boa Viagem",
+    "categoria": "praia",
+    "descricao": "A praia mais famosa de Recife com recifes de corais e águas calmas. Ideal para famílias."
+  },
+  {
+    "cidade": "natal",
+    "bairro": "Ponta Negra",
+    "nome": "Restaurante Camarões Natal",
+    "categoria": "restaurante",
+    "descricao": "Especialista em camarão e lagosta do RN. Frutos do mar fresquíssimos com vista para o mar."
+  },
+  {
+    "cidade": "natal",
+    "bairro": "Ponta Negra",
+    "nome": "Praia de Ponta Negra",
+    "categoria": "praia",
+    "descricao": "A praia mais famosa de Natal com o Morro do Careca, duna gigante que encanta turistas do mundo todo."
+  },
+  {
+    "cidade": "natal",
+    "bairro": "Cidade Alta",
+    "nome": "Forte dos Reis Magos",
+    "categoria": "atração",
+    "descricao": "Forte colonial estrelar de 1598, no ponto mais a leste das Américas. Museu histórico imperdível."
+  },
+  {
+    "cidade": "natal",
+    "bairro": "Ponta Negra",
+    "nome": "Bar da Pata",
+    "categoria": "bar",
+    "descricao": "Bar animado em Ponta Negra com forró e petiscos. O melhor da boemia natal a 100m da praia."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Ondina",
+    "nome": "Praia de Ondina",
+    "categoria": "praia",
+    "descricao": "Praia tranquila em Ondina, boa para banho. Localização privilegiada próxima ao Zoológico."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Rio Vermelho",
+    "nome": "Quiosque Acarajé da Dinha",
+    "categoria": "restaurante",
+    "descricao": "O acarajé mais famoso de Salvador, premiado internacionalmente. Fila vale cada minuto."
+  },
+  {
+    "cidade": "ouro preto",
+    "bairro": "Centro",
+    "nome": "Café Gerais",
+    "categoria": "cafe",
+    "descricao": "Cafeteria colonial no centro histórico com pão de queijo artesanal e café mineiro."
+  },
+  {
+    "cidade": "ouro preto",
+    "bairro": "Centro",
+    "nome": "Restaurante Chafariz",
+    "categoria": "restaurante",
+    "descricao": "Gastronomia mineira autêntica com feijão tropeiro e frango com quiabo em ambiente colonial."
+  },
+  {
+    "cidade": "ouro preto",
+    "bairro": "Centro",
+    "nome": "Igreja São Francisco de Assis",
+    "categoria": "atração",
+    "descricao": "A mais bela obra do Aleijadinho. Barroco mineiro com folhas de ouro e talha excepcional."
+  },
+  {
+    "cidade": "ouro preto",
+    "bairro": "Centro",
+    "nome": "Museu da Inconfidência",
+    "categoria": "atração",
+    "descricao": "Museu com objetos e documentos da Inconfidência Mineira. No Pelourinho onde Tiradentes foi executado."
+  },
+  {
+    "cidade": "foz do iguaçu",
+    "bairro": "Parque Nacional",
+    "nome": "Cataratas do Iguaçu BR",
+    "categoria": "atração",
+    "descricao": "As maiores quedas d'água do mundo com 275 saltos. A Garganta do Diabo de frente é de tirar o fôlego."
+  },
+  {
+    "cidade": "foz do iguaçu",
+    "bairro": "Centro",
+    "nome": "Restaurante Bufalo Branco",
+    "categoria": "restaurante",
+    "descricao": "Churrascaria tradicional de Foz do Iguaçu. O melhor rodízio de carnes da região da Tríplice Fronteira."
+  },
+  {
+    "cidade": "foz do iguaçu",
+    "bairro": "Centro",
+    "nome": "Pátio Central Bar",
+    "categoria": "bar",
+    "descricao": "Bar no coração de Foz com vista para a Av. Brasil. Petiscos e cerveja gelada após o dia nas Cataratas."
+  },
+  {
+    "cidade": "foz do iguaçu",
+    "bairro": "Puerto Iguazú",
+    "nome": "Parque das Aves",
+    "categoria": "passeio",
+    "descricao": "Parque com 150 espécies de aves tropicais, incluindo tucanos e araras. Perfeito para crianças."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "nome": "Chocolates Prawer",
+    "categoria": "atração",
+    "descricao": "A chocolateria mais famosa de Gramado com degustação gratuita. Fila obrigatória mas vale muito."
+  },
+  {
+    "cidade": "porto alegre",
+    "bairro": "Moinhos de Vento",
+    "nome": "Galeria Leme",
+    "categoria": "cafe",
+    "descricao": "Cafeteria premiada nos Moinhos de Vento com café especial e bolos artesanais. O melhor de POA."
+  },
+  {
+    "cidade": "porto alegre",
+    "bairro": "Cidade Baixa",
+    "nome": "Galpão Crioulo",
+    "categoria": "restaurante",
+    "descricao": "O restaurante de churrasco gaúcho mais famoso de Porto Alegre. Costela no fogo de chão imperdível."
+  },
+  {
+    "cidade": "porto alegre",
+    "bairro": "Cidade Baixa",
+    "nome": "Bar Ocidente",
+    "categoria": "bar",
+    "descricao": "Bar clássico da Cidade Baixa com música ao vivo e chope. O coração da boemia porto-alegrense."
+  },
+  {
+    "cidade": "porto alegre",
+    "bairro": "Centro",
+    "nome": "Mercado Público Central",
+    "categoria": "atração",
+    "descricao": "Mercado histórico de 1869 com bares, restaurantes e artesanato gaúcho. Ponto de encontro da cidade."
+  },
+  {
+    "cidade": "porto alegre",
+    "bairro": "Montserrat",
+    "nome": "Brique da Redenção",
+    "categoria": "passeio",
+    "descricao": "Feira de artesanato e antiguidades aos domingos no Parque Farroupilha. O passeio dominical dos gaúchos."
+  },
+  {
+    "cidade": "bonito",
+    "bairro": "Centro",
+    "nome": "Restaurante Tapera",
+    "categoria": "restaurante",
+    "descricao": "O melhor restaurante de Bonito com pacu na brasa e pintado à urucum. Gastronomia sul-mato-grossense."
+  },
+  {
+    "cidade": "bonito",
+    "bairro": "Centro",
+    "nome": "Rio da Prata",
+    "categoria": "passeio",
+    "descricao": "Flutuação no Rio da Prata com visibilidade de 30 metros. Os peixes dourados e o silêncio subaquático."
+  },
+  {
+    "cidade": "bonito",
+    "bairro": "Zona Rural",
+    "nome": "Aquário Natural",
+    "categoria": "atração",
+    "descricao": "Nascente de água cristalina com peixes coloridos. O aquário natural mais bonito do Brasil."
+  },
+  {
+    "cidade": "campo grande",
+    "bairro": "Centro",
+    "nome": "Morada dos Baís",
+    "categoria": "bar",
+    "descricao": "Complexo cultural com bares e restaurantes no centro histórico de Campo Grande. Agito garantido."
+  },
+  {
+    "cidade": "campo grande",
+    "bairro": "Centro",
+    "nome": "Mercado Municipal de Campo Grande",
+    "categoria": "atração",
+    "descricao": "Mercado com sorvete de bocaiuva, pão de queijo serrano e artesanato pantaneiro. O coração da cidade."
+  },
+  {
+    "cidade": "cuiabá",
+    "bairro": "Centro",
+    "nome": "Restaurante Pantanal",
+    "categoria": "restaurante",
+    "descricao": "Culinária pantaneira com pacu frito e piranha. A gastronomia autêntica do coração do Brasil."
+  },
+  {
+    "cidade": "cuiabá",
+    "bairro": "Centro",
+    "nome": "Igreja Nossa Senhora do Rosário",
+    "categoria": "atração",
+    "descricao": "Igreja do século XVIII no morro central de Cuiabá. Vista panorâmica da capital mato-grossense."
+  },
+  {
+    "cidade": "búzios",
+    "bairro": "Orla Bardot",
+    "nome": "Praia de João Fernandes",
+    "categoria": "praia",
+    "descricao": "A mais bela praia de Búzios com águas cristalinas e peixes coloridos. Paraíso para mergulho."
+  },
+  {
+    "cidade": "búzios",
+    "bairro": "Centro",
+    "nome": "Rua das Pedras Búzios",
+    "categoria": "atração",
+    "descricao": "A rua mais animada de Búzios com bares, restaurantes e galerias. Vida noturna imperdível."
+  },
+  {
+    "cidade": "búzios",
+    "bairro": "Ferradura",
+    "nome": "Restaurante Cigalon",
+    "categoria": "restaurante",
+    "descricao": "Alta gastronomia francesa com vista para a Praia da Ferradura. Referência culinária de Búzios."
+  },
+  {
+    "cidade": "paraty",
+    "bairro": "Centro Histórico",
+    "nome": "Centro Histórico Paraty",
+    "categoria": "atração",
+    "descricao": "Ruas de pedra colonial sem carros em horários determinados. Arquitetura do século XVIII preservada."
+  },
+  {
+    "cidade": "paraty",
+    "bairro": "Centro",
+    "nome": "Mercearia São Pedro Paraty",
+    "categoria": "bar",
+    "descricao": "Bar no centro histórico com cachaça artesanal de Paraty. O destilado mais famoso do Brasil."
+  },
+  {
+    "cidade": "campos do jordão",
+    "bairro": "Capivari",
+    "nome": "Avenida Macedo Soares Capivari",
+    "categoria": "atração",
+    "descricao": "A rua principal de Capivari com lojas de chocolate, fondue e cafeterias. O coração turístico de Campos."
+  },
+  {
+    "cidade": "campos do jordão",
+    "bairro": "Capivari",
+    "nome": "Café de la Mancha",
+    "categoria": "cafe",
+    "descricao": "Cafeteria charmosa no estilo europeu com fondue de queijo e chocolate quente artesanal."
+  },
+  {
+    "cidade": "campos do jordão",
+    "bairro": "Zona Rural",
+    "nome": "Horto Florestal",
+    "categoria": "passeio",
+    "descricao": "Parque estadual com trilhas entre pinheiros e araucárias. Temperatura gelada e pinhão fresquinho."
+  },
+  {
+    "cidade": "porto seguro",
+    "bairro": "Arraial D Ajuda",
+    "nome": "Praia do Mucugê",
+    "categoria": "praia",
+    "descricao": "A praia mais badalada de Arraial D'Ajuda com beach clubs e barracas animadas. Ambiente festivo."
+  },
+  {
+    "cidade": "porto seguro",
+    "bairro": "Trancoso",
+    "nome": "Quadrado de Trancoso",
+    "categoria": "atração",
+    "descricao": "Praça histórica rodeada de casas coloridas e restaurantes. O coração do charmoso Trancoso."
+  },
+  {
+    "cidade": "joão pessoa",
+    "bairro": "Cabo Branco",
+    "nome": "Farol do Cabo Branco",
+    "categoria": "atração",
+    "descricao": "O ponto mais oriental das Américas com farol modernista. Pôr do sol e nascer do sol únicos no Brasil."
+  },
+  {
+    "cidade": "joão pessoa",
+    "bairro": "Tambaú",
+    "nome": "Praia de Tambaú",
+    "categoria": "praia",
+    "descricao": "A praia principal de João Pessoa com calçadão e quitutes regionais como cartola e tapioca."
+  },
+  {
+    "cidade": "joão pessoa",
+    "bairro": "Tambaú",
+    "nome": "Mangai Restaurante",
+    "categoria": "restaurante",
+    "descricao": "O maior buffet nordestino do Brasil com 100 tipos de pratos. Cocada, carne de sol e muito mais."
+  },
+  {
+    "cidade": "maceió",
+    "bairro": "Pajuçara",
+    "nome": "Piscinas Naturais de Pajuçara",
+    "categoria": "atração",
+    "descricao": "Recifes de corais a 2km da praia acessíveis de jangada. Snorkeling em águas cristalinas."
+  },
+  {
+    "cidade": "maceió",
+    "bairro": "Pajuçara",
+    "nome": "Praia de Pajuçara",
+    "categoria": "praia",
+    "descricao": "A praia mais famosa de Maceió com barracas de coco e águas de cor esmeralda impressionante."
+  },
+  {
+    "cidade": "maceió",
+    "bairro": "Jatiúca",
+    "nome": "Restaurante Bodega do Seu Véio",
+    "categoria": "restaurante",
+    "descricao": "Culinária alagoana autêntica com sururu de coqueiro e mungunzá. Sabores que só existem em Maceió."
+  },
+  {
+    "cidade": "aracaju",
+    "bairro": "Atalaia",
+    "nome": "Orla de Atalaia",
+    "categoria": "praia",
+    "descricao": "Calçadão com 7km de extensão, o maior do Brasil. Barracas de frutos do mar e ambiente animado."
+  },
+  {
+    "cidade": "aracaju",
+    "bairro": "Centro",
+    "nome": "Mercado Municipal de Aracaju",
+    "categoria": "atração",
+    "descricao": "Mercado com artesanato sergipano, renda e culinária regional. Encanto nordestino autêntico."
+  },
+  {
+    "cidade": "palmas",
+    "bairro": "Plano Diretor Sul",
+    "nome": "Praia da Graciosa",
+    "categoria": "praia",
+    "descricao": "Praia de rio no Lago de Palmas com areia branca e água doce. A praia urbana mais linda do cerrado."
+  },
+  {
+    "cidade": "palmas",
+    "bairro": "Centro",
+    "nome": "Mercado Cultural de Palmas",
+    "categoria": "atração",
+    "descricao": "Mercado com artesanato tocantinense e gastronomia local. Produção artesanal da região do Jalapão."
   }
 ]

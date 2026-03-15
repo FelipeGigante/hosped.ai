@@ -79,14 +79,15 @@ def parse_inbound(payload: dict) -> Optional[tuple[str, str]]:
         if not remote_jid or "@g.us" in remote_jid:
             return None
 
-        # @lid contacts: resolve to real phone via senderPn if available (evolution v2.3+)
+        # @lid contacts: resolve to real phone via senderPn (Evolution API v2.3+)
         if "@lid" in remote_jid:
-            sender_pn = key.get("senderPn", "")
+            sender_pn = key.get("senderPn") or data.get("senderPn")
             if sender_pn:
                 remote_jid = f"{sender_pn}@s.whatsapp.net"
                 logger.info("Resolved @lid → %s via senderPn", remote_jid)
             else:
-                logger.warning("@lid contact %s has no senderPn — upgrade evolution to v2.3+", remote_jid)
+                logger.warning("@lid contact %s has no senderPn — ignoring message", remote_jid)
+                return None
 
         message = data.get("message", {})
         text = (

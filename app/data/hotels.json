@@ -1,213 +1,532 @@
 [
   {
-    "id": "sal_001",
-    "nome": "Pousada do Pilar",
-    "cidade": "salvador",
-    "bairro": "Pelourinho",
-    "preco_min": 180,
-    "preco_max": 280,
-    "amenities": ["café da manhã", "wifi", "ar condicionado"],
-    "nota": 9.2,
-    "tags": ["custo-benefício", "histórico", "casal", "turismo", "seguro"],
-    "descricao": "Charmosa pousada no coração do Pelourinho, patrimônio histórico. Ideal para casais que querem viver a cultura baiana.",
-    "link_reserva": "https://booking.com/hotel/pousada-pilar",
-    "telefone": "+557132431234"
+    "id": "sc_bc_001",
+    "nome": "Marenas Resort",
+    "cidade": "balneário camboriú",
+    "estado": "SC",
+    "bairro": "Meia Praia",
+    "preco_min": 480,
+    "preco_max": 780,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "vista para o mar"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "luxo",
+      "família",
+      "praia",
+      "resort",
+      "seguro",
+      "vista para o mar"
+    ],
+    "descricao": "Resort moderno em Meia Praia com piscina panorâmica e spa. A experiência premium de BC.",
+    "link_reserva": "https://booking.com/hotel/marenas-bc",
+    "telefone": "+554733660000"
   },
   {
-    "id": "sal_002",
-    "nome": "Wish Hotel da Bahia",
-    "cidade": "salvador",
-    "bairro": "Ondina",
-    "preco_min": 350,
-    "preco_max": 500,
-    "amenities": ["café da manhã", "piscina", "spa", "wifi", "estacionamento", "academia"],
+    "id": "sc_bc_002",
+    "nome": "Infinity Blue Resort",
+    "cidade": "balneário camboriú",
+    "estado": "SC",
+    "bairro": "Centro",
+    "preco_min": 380,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "piscina rooftop",
+      "spa",
+      "academia",
+      "wifi"
+    ],
     "nota": 9.0,
-    "tags": ["luxo", "praia", "casal", "família", "seguro", "vista para o mar"],
-    "descricao": "Hotel de alto padrão com vista para o mar em Ondina. Piscina, spa e estrutura completa para relaxar.",
-    "link_reserva": "https://booking.com/hotel/wish-bahia",
-    "telefone": "+557133280900"
+    "tags": [
+      "luxo",
+      "agito",
+      "vida noturna",
+      "casal",
+      "amigos",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno no centro de BC com piscina rooftop e acesso privilegiado à orla mais agitada do Sul.",
+    "link_reserva": "https://booking.com/hotel/infinity-blue-bc",
+    "telefone": "+554733661000"
   },
   {
-    "id": "sal_003",
-    "nome": "Hotel Catharina Paraguaçu",
-    "cidade": "salvador",
-    "bairro": "Barra",
+    "id": "rs_ben_003",
+    "nome": "Hotel Casa Valduga",
+    "cidade": "bento gonçalves",
+    "estado": "RS",
+    "bairro": "Vale dos Vinhedos",
+    "preco_min": 450,
+    "preco_max": 720,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "degustação de vinhos",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo",
+      "romântico",
+      "vinho",
+      "casal",
+      "gastronomia",
+      "seguro"
+    ],
+    "descricao": "Boutique hotel integrado à vinícola Valduga no Vale dos Vinhedos. Degustações privativas e experiência gastronômica única.",
+    "link_reserva": "https://booking.com/hotel/casa-valduga",
+    "telefone": "+555435523000"
+  },
+  {
+    "id": "rs_ben_001",
+    "nome": "Dall'Onder Grande Hotel",
+    "cidade": "bento gonçalves",
+    "estado": "RS",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 480,
+    "amenities": [
+      "café da manhã colonial",
+      "piscina aquecida",
+      "spa",
+      "sauna",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "romântico",
+      "casal",
+      "gastronomia",
+      "vinho",
+      "spa",
+      "seguro"
+    ],
+    "descricao": "Hotel charmoso na capital brasileira do vinho. Café colonial europeu e spa perfeito para casais.",
+    "link_reserva": "https://booking.com/hotel/dallonder-bento",
+    "telefone": "+555435521000"
+  },
+  {
+    "id": "sc_blu_001",
+    "nome": "Plaza Hering Hotel",
+    "cidade": "blumenau",
+    "estado": "SC",
+    "bairro": "Centro",
     "preco_min": 220,
     "preco_max": 380,
-    "amenities": ["café da manhã", "piscina", "wifi", "restaurante"],
-    "nota": 8.5,
-    "tags": ["praia", "turismo", "lazer", "custo-benefício", "seguro"],
-    "descricao": "Hotel tradicional no bairro da Barra, próximo ao farol. Boa estrutura com piscina e café incluso.",
-    "link_reserva": "https://booking.com/hotel/catharina-paraguacu",
-    "telefone": "+557133360000"
-  },
-  {
-    "id": "sal_004",
-    "nome": "Pousada Villa Carmo",
-    "cidade": "salvador",
-    "bairro": "Pelourinho",
-    "preco_min": 150,
-    "preco_max": 220,
-    "amenities": ["café da manhã", "wifi", "terraço"],
-    "nota": 9.4,
-    "tags": ["custo-benefício", "romântico", "casal", "histórico", "seguro"],
-    "descricao": "Pequena pousada boutique com terraço e café da manhã caseiro. A mais bem avaliada do Pelourinho.",
-    "link_reserva": "https://booking.com/hotel/villa-carmo",
-    "telefone": "+557132420900"
-  },
-  {
-    "id": "sal_005",
-    "nome": "Mercure Salvador Rio Vermelho",
-    "cidade": "salvador",
-    "bairro": "Rio Vermelho",
-    "preco_min": 280,
-    "preco_max": 450,
-    "amenities": ["café da manhã", "wifi", "academia", "estacionamento", "restaurante"],
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "estacionamento"
+    ],
     "nota": 8.7,
-    "tags": ["gastronomia", "vida noturna", "lazer", "amigos", "agito"],
-    "descricao": "Hotel moderno no Rio Vermelho, bairro mais badalado de Salvador. Perfeito para quem quer sair e aproveitar a noite.",
-    "link_reserva": "https://booking.com/hotel/mercure-rio-vermelho",
-    "telefone": "+557132160000"
+    "tags": [
+      "negócios",
+      "executivo",
+      "central",
+      "custo-benefício",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno no centro de Blumenau, sede da Oktoberfest. Estrutura completa para negócios e lazer.",
+    "link_reserva": "https://booking.com/hotel/plaza-hering-blumenau",
+    "telefone": "+554733200000"
   },
   {
-    "id": "rj_001",
-    "nome": "Hotel Atlântico Copacabana",
-    "cidade": "rio de janeiro",
-    "bairro": "Copacabana",
-    "preco_min": 250,
-    "preco_max": 380,
-    "amenities": ["café da manhã", "wifi", "ar condicionado"],
-    "nota": 8.6,
-    "tags": ["praia", "custo-benefício", "turismo", "casal", "seguro"],
-    "descricao": "A 200m da praia de Copacabana com café da manhã incluso. Melhor custo-benefício da região.",
-    "link_reserva": "https://booking.com/hotel/atlantico-copacabana",
-    "telefone": "+552125480000"
-  },
-  {
-    "id": "rj_002",
-    "nome": "Mango Tree Ipanema",
-    "cidade": "rio de janeiro",
-    "bairro": "Ipanema",
-    "preco_min": 350,
-    "preco_max": 520,
-    "amenities": ["café da manhã", "piscina", "wifi", "vista para o mar"],
-    "nota": 9.1,
-    "tags": ["praia", "casal", "romântico", "luxo", "vista para o mar", "seguro"],
-    "descricao": "Em frente à praia de Ipanema com piscina e vista para o mar. Endereço premium para casais.",
-    "link_reserva": "https://booking.com/hotel/mango-tree-ipanema",
-    "telefone": "+552125110000"
-  },
-  {
-    "id": "rj_003",
-    "nome": "Hotel Santa Teresa",
-    "cidade": "rio de janeiro",
-    "bairro": "Santa Teresa",
-    "preco_min": 280,
-    "preco_max": 420,
-    "amenities": ["café da manhã", "piscina", "wifi", "restaurante", "vista panorâmica"],
-    "nota": 9.3,
-    "tags": ["romântico", "arte", "casal", "charme", "vista panorâmica", "seguro"],
-    "descricao": "Hotel boutique no bairro boêmio de Santa Teresa com vista panorâmica do Rio. Experiência única e memorável.",
-    "link_reserva": "https://booking.com/hotel/santa-teresa",
-    "telefone": "+552133800000"
-  },
-  {
-    "id": "rj_004",
-    "nome": "Windsor Barra Hotel",
-    "cidade": "rio de janeiro",
-    "bairro": "Barra da Tijuca",
-    "preco_min": 300,
-    "preco_max": 460,
-    "amenities": ["café da manhã", "piscina", "academia", "estacionamento", "spa", "wifi"],
-    "nota": 8.4,
-    "tags": ["família", "praia", "kids", "piscina", "espaço", "seguro"],
-    "descricao": "Grande hotel na Barra com estrutura completa para famílias. Amplo, tranquilo e com fácil acesso à praia.",
-    "link_reserva": "https://booking.com/hotel/windsor-barra",
-    "telefone": "+552133201000"
-  },
-  {
-    "id": "rj_005",
-    "nome": "Ibis Rio Lapa",
-    "cidade": "rio de janeiro",
-    "bairro": "Lapa",
-    "preco_min": 180,
-    "preco_max": 280,
-    "amenities": ["wifi", "ar condicionado", "restaurante"],
-    "nota": 8.2,
-    "tags": ["custo-benefício", "vida noturna", "amigos", "agito", "central"],
-    "descricao": "Opção econômica no centro histórico, a 5 min dos arcos da Lapa. Perfeito para quem vai curtir a noite.",
-    "link_reserva": "https://booking.com/hotel/ibis-rio-lapa",
-    "telefone": "+552125033000"
-  },
-  {
-    "id": "sp_001",
-    "nome": "Hotel Unique",
-    "cidade": "são paulo",
-    "bairro": "Jardim Paulista",
-    "preco_min": 600,
-    "preco_max": 900,
-    "amenities": ["café da manhã", "piscina rooftop", "spa", "restaurante", "wifi", "concierge"],
-    "nota": 9.5,
-    "tags": ["luxo", "romântico", "casal", "gastronomia", "design", "seguro"],
-    "descricao": "Ícone da arquitetura paulistana com piscina rooftop e restaurante premiado. Para quem não abre mão do melhor.",
-    "link_reserva": "https://booking.com/hotel/unique-sp",
-    "telefone": "+551130554700"
-  },
-  {
-    "id": "sp_002",
-    "nome": "Ibis São Paulo Centro",
-    "cidade": "são paulo",
+    "id": "sc_blu_002",
+    "nome": "Himmelblau Palace Hotel",
+    "cidade": "blumenau",
+    "estado": "SC",
     "bairro": "Centro",
     "preco_min": 180,
-    "preco_max": 250,
-    "amenities": ["wifi", "ar condicionado", "restaurante"],
-    "nota": 7.8,
-    "tags": ["custo-benefício", "central", "negócios", "executivo"],
-    "descricao": "Localização central com preço acessível. Funcional para viagens de negócios ou base para explorar a cidade.",
-    "link_reserva": "https://booking.com/hotel/ibis-sp-centro",
-    "telefone": "+551121000000"
+    "preco_max": 300,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "estacionamento",
+      "restaurante"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "família",
+      "negócios",
+      "custo-benefício",
+      "Oktoberfest",
+      "cultura",
+      "seguro"
+    ],
+    "descricao": "Hotel clássico de Blumenau com arquitetura enxaimel e culinária alemã. A experiência germânica em SC.",
+    "link_reserva": "https://booking.com/hotel/himmelblau-blumenau",
+    "telefone": "+554733201000"
   },
   {
-    "id": "sp_003",
-    "nome": "Hotel Fasano São Paulo",
-    "cidade": "são paulo",
-    "bairro": "Jardins",
-    "preco_min": 800,
-    "preco_max": 1200,
-    "amenities": ["café da manhã", "piscina", "spa", "restaurante gourmet", "wifi", "concierge", "academia"],
-    "nota": 9.7,
-    "tags": ["luxo máximo", "gastronomia", "casal", "romântico", "executivo", "seguro"],
-    "descricao": "O hotel mais icônico de São Paulo no bairro mais chique. Gastronomia excepcional e serviço impecável.",
-    "link_reserva": "https://booking.com/hotel/fasano-sp",
-    "telefone": "+551138969999"
-  },
-  {
-    "id": "sp_004",
-    "nome": "Novotel São Paulo Morumbi",
-    "cidade": "são paulo",
-    "bairro": "Morumbi",
-    "preco_min": 350,
-    "preco_max": 520,
-    "amenities": ["café da manhã", "piscina", "academia", "wifi", "estacionamento", "restaurante"],
-    "nota": 8.8,
-    "tags": ["família", "negócios", "executivo", "lazer", "seguro", "espaçoso"],
-    "descricao": "Hotel moderno no Morumbi com ótima estrutura para famílias e executivos. Bem localizado e seguro.",
-    "link_reserva": "https://booking.com/hotel/novotel-morumbi",
-    "telefone": "+551121890000"
-  },
-  {
-    "id": "sp_005",
-    "nome": "Pullman Vila Olímpia",
-    "cidade": "são paulo",
-    "bairro": "Vila Olímpia",
-    "preco_min": 420,
-    "preco_max": 620,
-    "amenities": ["café da manhã", "piscina", "academia", "spa", "wifi", "restaurante"],
+    "id": "sc_bom_001",
+    "nome": "Pousada Mar de Dentro",
+    "cidade": "bombinhas",
+    "estado": "SC",
+    "bairro": "Bombas",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "varanda",
+      "estacionamento"
+    ],
     "nota": 9.0,
-    "tags": ["negócios", "gastronomia", "vida noturna", "amigos", "agito", "seguro"],
-    "descricao": "No coração da Vila Olímpia, rodeado de restaurantes e baladas. Excelente para lazer com amigos.",
-    "link_reserva": "https://booking.com/hotel/pullman-vila-olimpia",
-    "telefone": "+551130450000"
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "casal",
+      "águas cristalinas",
+      "seguro"
+    ],
+    "descricao": "Pousada familiar em Bombas com acesso a praias de águas cristalinas. A joia escondida do litoral catarinense.",
+    "link_reserva": "https://booking.com/hotel/mar-dentro-bombinhas",
+    "telefone": "+554733690000"
+  },
+  {
+    "id": "sc_bom_002",
+    "nome": "Hotel Quatro Ilhas",
+    "cidade": "bombinhas",
+    "estado": "SC",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "vista para o mar",
+      "estacionamento"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "vista para o mar",
+      "seguro"
+    ],
+    "descricao": "Hotel com vista deslumbrante para as ilhas e o mar verde de Bombinhas. Estrutura familiar completa.",
+    "link_reserva": "https://booking.com/hotel/quatro-ilhas-bombinhas",
+    "telefone": "+554733691000"
+  },
+  {
+    "id": "df_002",
+    "nome": "Grand Hyatt Brasília",
+    "cidade": "brasília",
+    "estado": "DF",
+    "bairro": "Lago Sul",
+    "preco_min": 650,
+    "preco_max": 980,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "concierge",
+      "restaurante"
+    ],
+    "nota": 9.4,
+    "tags": [
+      "luxo",
+      "negócios",
+      "executivo",
+      "casal",
+      "Lago Sul",
+      "seguro"
+    ],
+    "descricao": "O hotel mais sofisticado de Brasília com vista para o Lago Sul. Padrão Hyatt com serviço impecável.",
+    "link_reserva": "https://booking.com/hotel/grand-hyatt-brasilia",
+    "telefone": "+556132421000"
+  },
+  {
+    "id": "df_001",
+    "nome": "Royal Tulip Brasília Alvorada",
+    "cidade": "brasília",
+    "estado": "DF",
+    "bairro": "Setor Hoteleiro Norte",
+    "preco_min": 580,
+    "preco_max": 920,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "restaurante",
+      "concierge"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "luxo",
+      "negócios",
+      "executivo",
+      "família",
+      "seguro",
+      "Niemeyer"
+    ],
+    "descricao": "O hotel mais icônico de Brasília com arquitetura de Oscar Niemeyer. Piscina, spa e gastronomia premiada.",
+    "link_reserva": "https://booking.com/hotel/royal-tulip-brasilia",
+    "telefone": "+556132420000"
+  },
+  {
+    "id": "df_008",
+    "nome": "Hotel Bela Vista Brasília",
+    "cidade": "brasília",
+    "estado": "DF",
+    "bairro": "Lago Norte",
+    "preco_min": 300,
+    "preco_max": 500,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "vista para o lago",
+      "jardim"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "família",
+      "lazer",
+      "Lago Norte",
+      "natureza",
+      "seguro"
+    ],
+    "descricao": "Hotel tranquilo no Lago Norte com vista para o Lago Paranoá. Perfeito para turismo e descanso em família.",
+    "link_reserva": "https://booking.com/hotel/bela-vista-brasilia",
+    "telefone": "+556132427000"
+  },
+  {
+    "id": "rj_buz_003",
+    "nome": "Casas Brancas Boutique Hotel",
+    "cidade": "búzios",
+    "estado": "RJ",
+    "bairro": "Alto de Búzios",
+    "preco_min": 500,
+    "preco_max": 850,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "concierge",
+      "vista panorâmica"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo máximo",
+      "romântico",
+      "casal",
+      "vista panorâmica",
+      "seguro"
+    ],
+    "descricao": "Ícone de Búzios com arquitetura grega e vista panorâmica da baía. Experiência cinco estrelas incomparável.",
+    "link_reserva": "https://booking.com/hotel/casas-brancas-buzios",
+    "telefone": "+552222623458"
+  },
+  {
+    "id": "rj_buz_001",
+    "nome": "Abracadabra Resort",
+    "cidade": "búzios",
+    "estado": "RJ",
+    "bairro": "Orla Bardot",
+    "preco_min": 420,
+    "preco_max": 700,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "vista para o mar"
+    ],
+    "nota": 9.3,
+    "tags": [
+      "luxo",
+      "casal",
+      "romântico",
+      "praia",
+      "seguro"
+    ],
+    "descricao": "Resort boutique na Orla Bardot com vista para o mar e spa completo. O endereço dos casais em Búzios.",
+    "link_reserva": "https://booking.com/hotel/abracadabra-buzios",
+    "telefone": "+552222020000"
+  },
+  {
+    "id": "sp_cdj_001",
+    "nome": "Hotel Toriba",
+    "cidade": "campos do jordão",
+    "estado": "SP",
+    "bairro": "Capivari",
+    "preco_min": 580,
+    "preco_max": 900,
+    "amenities": [
+      "café da manhã colonial",
+      "lareira",
+      "piscina aquecida",
+      "spa",
+      "academia",
+      "wifi"
+    ],
+    "nota": 9.6,
+    "tags": [
+      "luxo",
+      "romântico",
+      "casal",
+      "frio",
+      "família",
+      "seguro"
+    ],
+    "descricao": "O hotel mais icônico de Campos do Jordão desde 1943. Café colonial lendário e piscina aquecida com vista para a Serra.",
+    "link_reserva": "https://booking.com/hotel/toriba-campos",
+    "telefone": "+551236641566"
+  },
+  {
+    "id": "sp_cdj_004",
+    "nome": "Frontenac Hotel",
+    "cidade": "campos do jordão",
+    "estado": "SP",
+    "bairro": "Capivari",
+    "preco_min": 420,
+    "preco_max": 680,
+    "amenities": [
+      "café da manhã colonial",
+      "piscina aquecida",
+      "spa",
+      "sauna",
+      "lareira",
+      "wifi"
+    ],
+    "nota": 9.3,
+    "tags": [
+      "luxo",
+      "família",
+      "spa",
+      "frio",
+      "resort",
+      "seguro"
+    ],
+    "descricao": "Resort alpino com spa completo e piscina aquecida coberta. Estrutura para relaxar no inverno da Serra da Mantiqueira.",
+    "link_reserva": "https://booking.com/hotel/frontenac-campos",
+    "telefone": "+551236641100"
+  },
+  {
+    "id": "ce_010",
+    "nome": "Hotel das Falésias",
+    "cidade": "canoa quebrada",
+    "estado": "CE",
+    "bairro": "Praia",
+    "preco_min": 220,
+    "preco_max": 400,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "vista para o mar",
+      "estacionamento"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "falésias",
+      "custo-benefício",
+      "seguro"
+    ],
+    "descricao": "Hotel com vista privilegiada para as icônicas falésias vermelhas de Canoa Quebrada. Pôr do sol inesquecível.",
+    "link_reserva": "https://booking.com/hotel/falesias-canoa",
+    "telefone": "+558834711000"
+  },
+  {
+    "id": "ce_009",
+    "nome": "Pousada do Caju",
+    "cidade": "canoa quebrada",
+    "estado": "CE",
+    "bairro": "Broadway",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "piscina",
+      "terraço"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "praia",
+      "amigos",
+      "vida noturna",
+      "natureza",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada animada na Broadway de Canoa Quebrada. Perto de bares, restaurantes e das falésias vermelhas.",
+    "link_reserva": "https://booking.com/hotel/caju-canoa-quebrada",
+    "telefone": "+558834710000"
+  },
+  {
+    "id": "ac_008",
+    "nome": "Pousada Juruá",
+    "cidade": "cruzeiro do sul",
+    "estado": "AC",
+    "bairro": "Beira Rio",
+    "preco_min": 100,
+    "preco_max": 200,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "vista para o rio"
+    ],
+    "nota": 8.1,
+    "tags": [
+      "ecoturismo",
+      "pesca",
+      "natureza",
+      "Amazônia",
+      "aventura"
+    ],
+    "descricao": "Pousada à beira do Rio Juruá. Ponto de partida para pesca esportiva e expedições na floresta amazônica.",
+    "link_reserva": "https://booking.com/hotel/juruá-cruzeiro",
+    "telefone": "+556832451000"
+  },
+  {
+    "id": "ac_007",
+    "nome": "Hotel Cruzeiro do Sul",
+    "cidade": "cruzeiro do sul",
+    "estado": "AC",
+    "bairro": "Centro",
+    "preco_min": 120,
+    "preco_max": 240,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "estacionamento"
+    ],
+    "nota": 7.9,
+    "tags": [
+      "negócios",
+      "ecoturismo",
+      "Juruá",
+      "natureza"
+    ],
+    "descricao": "Hotel central em Cruzeiro do Sul, portal do Vale do Juruá. Estrutura básica e boa localização.",
+    "link_reserva": "https://booking.com/hotel/cruzeiro-sul-ac",
+    "telefone": "+556832450000"
   },
   {
     "id": "flo_001",
@@ -216,9 +535,22 @@
     "bairro": "Lagoa da Conceição",
     "preco_min": 200,
     "preco_max": 340,
-    "amenities": ["café da manhã", "wifi", "varanda", "estacionamento"],
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "varanda",
+      "estacionamento"
+    ],
     "nota": 9.3,
-    "tags": ["natureza", "romantico", "casal", "praia", "lagoa", "seguro", "custo-benefício"],
+    "tags": [
+      "natureza",
+      "romantico",
+      "casal",
+      "praia",
+      "lagoa",
+      "seguro",
+      "custo-benefício"
+    ],
     "descricao": "Pousada charmosa à beira da Lagoa da Conceição. Café da manhã farto e vista de tirar o fôlego.",
     "link_reserva": "https://booking.com/hotel/pousada-acores-floripa",
     "telefone": "+554832321234"
@@ -230,26 +562,28 @@
     "bairro": "Santinho",
     "preco_min": 480,
     "preco_max": 750,
-    "amenities": ["café da manhã", "all inclusive", "piscina", "spa", "academia", "wifi", "praia privativa"],
+    "amenities": [
+      "café da manhã",
+      "all inclusive",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "praia privativa"
+    ],
     "nota": 9.1,
-    "tags": ["luxo", "família", "kids", "praia", "resort", "all inclusive", "seguro"],
+    "tags": [
+      "luxo",
+      "família",
+      "kids",
+      "praia",
+      "resort",
+      "all inclusive",
+      "seguro"
+    ],
     "descricao": "Resort all-inclusive na praia do Santinho com estrutura completa. O melhor da ilha para famílias.",
     "link_reserva": "https://booking.com/hotel/costao-santinho",
     "telefone": "+554832619000"
-  },
-  {
-    "id": "flo_003",
-    "nome": "Hotel Quinta das Videiras",
-    "cidade": "florianópolis",
-    "bairro": "Jurerê Internacional",
-    "preco_min": 350,
-    "preco_max": 580,
-    "amenities": ["café da manhã", "piscina", "wifi", "estacionamento"],
-    "nota": 8.8,
-    "tags": ["luxo", "agito", "vida noturna", "amigos", "praia", "badalado", "seguro"],
-    "descricao": "Em Jurerê Internacional, o bairro mais badalado de Floripa. Perto de beach clubs e do melhor da ilha.",
-    "link_reserva": "https://booking.com/hotel/quinta-videiras",
-    "telefone": "+554832823456"
   },
   {
     "id": "flo_004",
@@ -258,26 +592,112 @@
     "bairro": "Campeche",
     "preco_min": 160,
     "preco_max": 250,
-    "amenities": ["café da manhã", "wifi", "bicicletas"],
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "bicicletas"
+    ],
     "nota": 9.0,
-    "tags": ["custo-benefício", "surf", "natureza", "amigos", "praia", "tranquilo"],
+    "tags": [
+      "custo-benefício",
+      "surf",
+      "natureza",
+      "amigos",
+      "praia",
+      "tranquilo"
+    ],
     "descricao": "Pousada simples e bem cuidada no Campeche, praia favorita dos surfistas. Ambiente descontraído.",
     "link_reserva": "https://booking.com/hotel/caminho-do-mar",
     "telefone": "+554832456789"
   },
   {
-    "id": "flo_005",
-    "nome": "Blue Tree Towers Florianópolis",
-    "cidade": "florianópolis",
-    "bairro": "Centro",
-    "preco_min": 240,
-    "preco_max": 400,
-    "amenities": ["café da manhã", "piscina", "academia", "wifi", "estacionamento", "restaurante"],
-    "nota": 8.5,
-    "tags": ["negócios", "executivo", "central", "lazer", "seguro"],
-    "descricao": "Hotel corporativo no centro com boa estrutura. Prático para quem precisa de mobilidade pela ilha.",
-    "link_reserva": "https://booking.com/hotel/bluetree-floripa",
-    "telefone": "+554832210000"
+    "id": "ce_001",
+    "nome": "Gran Marquise Hotel",
+    "cidade": "fortaleza",
+    "estado": "CE",
+    "bairro": "Meireles",
+    "preco_min": 480,
+    "preco_max": 780,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "restaurante",
+      "vista para o mar"
+    ],
+    "nota": 9.3,
+    "tags": [
+      "luxo",
+      "praia",
+      "casal",
+      "família",
+      "resort",
+      "seguro"
+    ],
+    "descricao": "Ícone de Fortaleza com piscina na cobertura e vista de 360° para o mar. O mais sofisticado do Meireles.",
+    "link_reserva": "https://booking.com/hotel/gran-marquise",
+    "telefone": "+558532550000"
+  },
+  {
+    "id": "ce_002",
+    "nome": "Hotel Luzeiros Fortaleza",
+    "cidade": "fortaleza",
+    "estado": "CE",
+    "bairro": "Meireles",
+    "preco_min": 320,
+    "preco_max": 520,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "restaurante",
+      "vista para o mar"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "praia",
+      "casal",
+      "lazer",
+      "família",
+      "seguro",
+      "vista para o mar"
+    ],
+    "descricao": "Hotel moderno em frente ao mar do Meireles. Piscina panorâmica e café da manhã com vista para a Praia do Futuro.",
+    "link_reserva": "https://booking.com/hotel/luzeiros-fortaleza",
+    "telefone": "+558532551000"
+  },
+  {
+    "id": "ce_005",
+    "nome": "Hotel Marina Park",
+    "cidade": "fortaleza",
+    "estado": "CE",
+    "bairro": "Mucuripe",
+    "preco_min": 350,
+    "preco_max": 560,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "marina",
+      "restaurante"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "marina",
+      "negócios",
+      "casal",
+      "lazer",
+      "seguro",
+      "nautico"
+    ],
+    "descricao": "Hotel com marina privativa no Mucuripe. Para quem viaja de barco ou quer curtir o Mercado dos Peixes.",
+    "link_reserva": "https://booking.com/hotel/marina-park-fortaleza",
+    "telefone": "+558532554000"
   },
   {
     "id": "grm_001",
@@ -286,54 +706,27 @@
     "bairro": "Zona Rural",
     "preco_min": 380,
     "preco_max": 580,
-    "amenities": ["café da manhã colonial", "lareira", "piscina aquecida", "wifi", "trilhas", "estacionamento"],
+    "amenities": [
+      "café da manhã colonial",
+      "lareira",
+      "piscina aquecida",
+      "wifi",
+      "trilhas",
+      "estacionamento"
+    ],
     "nota": 9.6,
-    "tags": ["romantico", "casal", "natureza", "frio", "luxo", "tranquilo", "seguro"],
+    "tags": [
+      "romantico",
+      "casal",
+      "natureza",
+      "frio",
+      "luxo",
+      "tranquilo",
+      "seguro"
+    ],
     "descricao": "Fazenda boutique com lareira, piscina aquecida e café colonial farto. A escolha dos casais em Gramado.",
     "link_reserva": "https://booking.com/hotel/fazenda-pedra-negra",
     "telefone": "+555435860000"
-  },
-  {
-    "id": "grm_002",
-    "nome": "Hotel Ritta Höppner",
-    "cidade": "gramado",
-    "bairro": "Centro",
-    "preco_min": 280,
-    "preco_max": 460,
-    "amenities": ["café da manhã colonial", "lareira", "wifi", "spa", "academia"],
-    "nota": 9.2,
-    "tags": ["romantico", "casal", "central", "charme", "café colonial", "seguro"],
-    "descricao": "Hotel icônico no centro de Gramado com arquitetura europeia e café colonial premiado.",
-    "link_reserva": "https://booking.com/hotel/ritta-hoppner",
-    "telefone": "+555435860800"
-  },
-  {
-    "id": "grm_003",
-    "nome": "Gramado Palace Hotel",
-    "cidade": "gramado",
-    "bairro": "Centro",
-    "preco_min": 220,
-    "preco_max": 360,
-    "amenities": ["café da manhã", "lareira", "wifi", "estacionamento"],
-    "nota": 8.7,
-    "tags": ["família", "kids", "central", "custo-benefício", "seguro"],
-    "descricao": "Hotel familiar bem localizado no centro, a 10 min das principais atrações. Bom custo-benefício.",
-    "link_reserva": "https://booking.com/hotel/gramado-palace",
-    "telefone": "+555435861234"
-  },
-  {
-    "id": "grm_004",
-    "nome": "Pousada Chalé Alpino",
-    "cidade": "gramado",
-    "bairro": "Planalto",
-    "preco_min": 160,
-    "preco_max": 280,
-    "amenities": ["café da manhã", "lareira", "wifi", "jardim"],
-    "nota": 9.0,
-    "tags": ["romantico", "custo-benefício", "casal", "aconchegante", "natureza"],
-    "descricao": "Chalé aconchegante com lareira e jardim florido. O melhor custo-benefício de Gramado para casais.",
-    "link_reserva": "https://booking.com/hotel/chale-alpino",
-    "telefone": "+555435862345"
   },
   {
     "id": "grm_005",
@@ -342,11 +735,2582 @@
     "bairro": "Planalto",
     "preco_min": 450,
     "preco_max": 700,
-    "amenities": ["café da manhã colonial", "piscina aquecida coberta", "spa", "lareira", "academia", "wifi", "restaurante"],
+    "amenities": [
+      "café da manhã colonial",
+      "piscina aquecida coberta",
+      "spa",
+      "lareira",
+      "academia",
+      "wifi",
+      "restaurante"
+    ],
     "nota": 9.4,
-    "tags": ["luxo", "família", "spa", "kids", "resort", "frio", "seguro"],
+    "tags": [
+      "luxo",
+      "família",
+      "spa",
+      "kids",
+      "resort",
+      "frio",
+      "seguro"
+    ],
     "descricao": "Resort de alto padrão com piscina aquecida coberta e spa completo. Perfeito para famílias no frio gaúcho.",
     "link_reserva": "https://booking.com/hotel/serra-azul-resort",
     "telefone": "+555435870000"
+  },
+  {
+    "id": "grm_002",
+    "nome": "Hotel Ritta Höppner",
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã colonial",
+      "lareira",
+      "wifi",
+      "spa",
+      "academia"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "romantico",
+      "casal",
+      "central",
+      "charme",
+      "café colonial",
+      "seguro"
+    ],
+    "descricao": "Hotel icônico no centro de Gramado com arquitetura europeia e café colonial premiado.",
+    "link_reserva": "https://booking.com/hotel/ritta-hoppner",
+    "telefone": "+555435860800"
+  },
+  {
+    "id": "es_006",
+    "nome": "Hotel Blue Tree Guarapari",
+    "cidade": "guarapari",
+    "estado": "ES",
+    "bairro": "Praia do Morro",
+    "preco_min": 280,
+    "preco_max": 480,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "academia",
+      "vista para o mar"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "praia",
+      "família",
+      "lazer",
+      "areia-monazítica",
+      "seguro"
+    ],
+    "descricao": "Hotel à beira da famosa Praia do Morro em Guarapari. Areia monazítica com propriedades terapêuticas.",
+    "link_reserva": "https://booking.com/hotel/blue-tree-guarapari",
+    "telefone": "+552732721000"
+  },
+  {
+    "id": "es_007",
+    "nome": "Pousada das Tartarugas",
+    "cidade": "guarapari",
+    "estado": "ES",
+    "bairro": "Setiba",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "piscina",
+      "jardim"
+    ],
+    "nota": 8.6,
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "tartarugas",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada próxima ao Parque das Tartarugas em Setiba. Natureza preservada e praias desertas.",
+    "link_reserva": "https://booking.com/hotel/tartarugas-guarapari",
+    "telefone": "+552732722000"
+  },
+  {
+    "id": "sp_ilh_001",
+    "nome": "DPNY Beach Hotel",
+    "cidade": "ilhabela",
+    "estado": "SP",
+    "bairro": "Praia do Curral",
+    "preco_min": 450,
+    "preco_max": 750,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "restaurante",
+      "praia privativa"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "luxo",
+      "casal",
+      "praia",
+      "romântico",
+      "seguro"
+    ],
+    "descricao": "Hotel de luxo com praia privativa e spa. A escolha premium dos casais que visitam Ilhabela.",
+    "link_reserva": "https://booking.com/hotel/dpny-ilhabela",
+    "telefone": "+551238960000"
+  },
+  {
+    "id": "sp_ilh_002",
+    "nome": "Pousada dos Hibiscos",
+    "cidade": "ilhabela",
+    "estado": "SP",
+    "bairro": "Vila",
+    "preco_min": 220,
+    "preco_max": 380,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "jardim tropical"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "natureza",
+      "casal",
+      "custo-benefício",
+      "família",
+      "tranquilo",
+      "seguro"
+    ],
+    "descricao": "Pousada charmosa com jardim tropical e piscina. Localização privilegiada próxima à Vila e às trilhas.",
+    "link_reserva": "https://booking.com/hotel/hibiscos-ilhabela",
+    "telefone": "+551238961000"
+  },
+  {
+    "id": "es_008",
+    "nome": "Pousada Canaã Itaúnas",
+    "cidade": "itaúnas",
+    "estado": "ES",
+    "bairro": "Centro",
+    "preco_min": 150,
+    "preco_max": 280,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "forró",
+      "hammock"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "dunas",
+      "forró",
+      "natureza",
+      "aventura",
+      "casal",
+      "amigos"
+    ],
+    "descricao": "Pousada no vilarejo das dunas. Itaúnas é famosa pelo forró e pelo mar selvagem — não perca!",
+    "link_reserva": "https://booking.com/hotel/canaã-itaunas",
+    "telefone": "+552732762000"
+  },
+  {
+    "id": "es_009",
+    "nome": "Pousada Dunas do Mar",
+    "cidade": "itaúnas",
+    "estado": "ES",
+    "bairro": "Orla",
+    "preco_min": 120,
+    "preco_max": 240,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "terraço"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "dunas",
+      "forró",
+      "natureza",
+      "custo-benefício",
+      "casal"
+    ],
+    "descricao": "Pousada simples e encantadora em Itaúnas. Vista para as dunas e a 5 min do Parque Estadual.",
+    "link_reserva": "https://booking.com/hotel/dunas-itaunas",
+    "telefone": "+552732763000"
+  },
+  {
+    "id": "ce_008",
+    "nome": "Vila Kalango",
+    "cidade": "jericoacoara",
+    "estado": "CE",
+    "bairro": "Serrote",
+    "preco_min": 480,
+    "preco_max": 780,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "kitesurf",
+      "bar"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo",
+      "kitesurf",
+      "casal",
+      "romântico",
+      "praia",
+      "seguro"
+    ],
+    "descricao": "O hotel mais exclusivo de Jericoacoara no topo do Serrote. Vista 360° das dunas e do mar.",
+    "link_reserva": "https://booking.com/hotel/vila-kalango-jeri",
+    "telefone": "+558836692000"
+  },
+  {
+    "id": "ce_006",
+    "nome": "Rancho do Peixe",
+    "cidade": "jericoacoara",
+    "estado": "CE",
+    "bairro": "Centro",
+    "preco_min": 350,
+    "preco_max": 600,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "kitesurf",
+      "restaurante"
+    ],
+    "nota": 9.4,
+    "tags": [
+      "luxo",
+      "praia",
+      "kitesurf",
+      "casal",
+      "romântico",
+      "seguro"
+    ],
+    "descricao": "Pousada premium em Jericoacoara com piscina de borda infinita e escola de kitesurf. A favorita dos casais.",
+    "link_reserva": "https://booking.com/hotel/rancho-peixe-jeri",
+    "telefone": "+558836690000"
+  },
+  {
+    "id": "ba_len_002",
+    "nome": "Pousada Lua Nova",
+    "cidade": "lençóis",
+    "estado": "BA",
+    "bairro": "Bairro Histórico",
+    "preco_min": 150,
+    "preco_max": 250,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "jardim",
+      "varanda"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "custo-benefício",
+      "ecoturismo",
+      "natureza",
+      "casal",
+      "aventura"
+    ],
+    "descricao": "Pousada charmosa com jardim tropical e café da manhã regional. A favorita dos aventureiros da Chapada.",
+    "link_reserva": "https://booking.com/hotel/lua-nova-lencois",
+    "telefone": "+557533341000"
+  },
+  {
+    "id": "ba_len_001",
+    "nome": "Hotel de Lençóis",
+    "cidade": "lençóis",
+    "estado": "BA",
+    "bairro": "Centro Histórico",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "natureza",
+      "aventura",
+      "ecoturismo",
+      "casal",
+      "família",
+      "seguro"
+    ],
+    "descricao": "Hotel clássico no coração da Chapada Diamantina. Base perfeita para trilhas e cachoeiras.",
+    "link_reserva": "https://booking.com/hotel/lencois-chapada",
+    "telefone": "+557533340000"
+  },
+  {
+    "id": "ap_001",
+    "nome": "Hotel Novotel Macapá",
+    "cidade": "macapá",
+    "estado": "AP",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "negócios",
+      "executivo",
+      "central",
+      "lazer",
+      "seguro"
+    ],
+    "descricao": "O melhor hotel de Macapá na orla do Rio Amazonas. Vista para a linha do Equador e estrutura completa.",
+    "link_reserva": "https://booking.com/hotel/novotel-macapa",
+    "telefone": "+559632230000"
+  },
+  {
+    "id": "ap_002",
+    "nome": "Equatorial Palace Hotel",
+    "cidade": "macapá",
+    "estado": "AP",
+    "bairro": "Centro",
+    "preco_min": 220,
+    "preco_max": 380,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "ar condicionado",
+      "restaurante"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "negócios",
+      "central",
+      "lazer",
+      "Equador",
+      "seguro"
+    ],
+    "descricao": "Hotel na esquina do mundo — próximo à Fortaleza de São José e à Linha do Equador. Localização histórica.",
+    "link_reserva": "https://booking.com/hotel/equatorial-palace-macapa",
+    "telefone": "+559632231000"
+  },
+  {
+    "id": "ap_005",
+    "nome": "Amazon Park Hotel",
+    "cidade": "macapá",
+    "estado": "AP",
+    "bairro": "Buritizal",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "ar condicionado",
+      "jardim"
+    ],
+    "nota": 8.4,
+    "tags": [
+      "família",
+      "lazer",
+      "Amazônia",
+      "natureza",
+      "seguro"
+    ],
+    "descricao": "Hotel com jardim amazônico e piscina. Boa estrutura para quem quer explorar o Amapá e o Cabo Norte.",
+    "link_reserva": "https://booking.com/hotel/amazon-park-macapa",
+    "telefone": "+559632234000"
+  },
+  {
+    "id": "al_001",
+    "nome": "Kenilworth Resort",
+    "cidade": "maceió",
+    "estado": "AL",
+    "bairro": "Pajuçara",
+    "preco_min": 380,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "restaurante",
+      "vista para o mar"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "luxo",
+      "praia",
+      "casal",
+      "família",
+      "resort",
+      "seguro"
+    ],
+    "descricao": "Resort à beira-mar em Pajuçara com piscina e spa. A experiência premium do litoral alagoano.",
+    "link_reserva": "https://booking.com/hotel/kenilworth-maceio",
+    "telefone": "+558232230000"
+  },
+  {
+    "id": "al_002",
+    "nome": "Radisson Maceió",
+    "cidade": "maceió",
+    "estado": "AL",
+    "bairro": "Ponta Verde",
+    "preco_min": 300,
+    "preco_max": 500,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "praia",
+      "negócios",
+      "casal",
+      "lazer",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno em Ponta Verde com vista para o mar. Ótima localização entre as melhores praias de Maceió.",
+    "link_reserva": "https://booking.com/hotel/radisson-maceio",
+    "telefone": "+558232231000"
+  },
+  {
+    "id": "al_005",
+    "nome": "Mercure Maceió",
+    "cidade": "maceió",
+    "estado": "AL",
+    "bairro": "Pajuçara",
+    "preco_min": 260,
+    "preco_max": 420,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "academia",
+      "restaurante"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "negócios",
+      "lazer",
+      "praia",
+      "executivo",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno em Pajuçara ideal para negócios e lazer. A 200m da famosa Praia de Pajuçara.",
+    "link_reserva": "https://booking.com/hotel/mercure-maceio",
+    "telefone": "+558232234000"
+  },
+  {
+    "id": "am_005",
+    "nome": "Juma Amazon Lodge",
+    "cidade": "manaus",
+    "estado": "AM",
+    "bairro": "Rio Mamori",
+    "preco_min": 450,
+    "preco_max": 750,
+    "amenities": [
+      "café da manhã",
+      "all inclusive",
+      "passeios",
+      "canoagem",
+      "pesca",
+      "trilhas"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo",
+      "ecoturismo",
+      "aventura",
+      "casal",
+      "Amazônia",
+      "all inclusive"
+    ],
+    "descricao": "Lodge premium na floresta amazônica com bangalôs sobre o rio. All-inclusive com guia especializado em flora e fauna.",
+    "link_reserva": "https://booking.com/hotel/juma-lodge",
+    "telefone": "+559232124000"
+  },
+  {
+    "id": "am_004",
+    "nome": "Amazon Eco Lodge",
+    "cidade": "manaus",
+    "estado": "AM",
+    "bairro": "Lago Janauarí",
+    "preco_min": 380,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "passeios guiados",
+      "wifi",
+      "observação de fauna",
+      "canoagem"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "ecoturismo",
+      "aventura",
+      "Amazônia",
+      "família",
+      "natureza",
+      "pesca"
+    ],
+    "descricao": "Lodge flutuante no Lago Janauarí com passeios noturnos e observação de jacarés. Experiência amazônica autêntica.",
+    "link_reserva": "https://booking.com/hotel/amazon-eco-lodge",
+    "telefone": "+559232123000"
+  },
+  {
+    "id": "am_001",
+    "nome": "Tropical Executive Hotel",
+    "cidade": "manaus",
+    "estado": "AM",
+    "bairro": "Ponta Negra",
+    "preco_min": 320,
+    "preco_max": 520,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "spa",
+      "wifi",
+      "restaurante",
+      "vista para o rio"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "luxo",
+      "família",
+      "Amazônia",
+      "piscina",
+      "seguro",
+      "vista para o rio"
+    ],
+    "descricao": "O hotel mais famoso de Manaus à beira do Rio Negro com piscina olímpica e vista deslumbrante.",
+    "link_reserva": "https://booking.com/hotel/tropical-executive-manaus",
+    "telefone": "+559232120000"
+  },
+  {
+    "id": "al_006",
+    "nome": "Maragogi Resort",
+    "cidade": "maragogi",
+    "estado": "AL",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 480,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "praia privativa",
+      "estacionamento"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "carimã",
+      "águas cristalinas",
+      "seguro"
+    ],
+    "descricao": "Resort em Maragogi com acesso às piscinas naturais do Carimã. As águas mais transparentes do Nordeste.",
+    "link_reserva": "https://booking.com/hotel/maragogi-resort",
+    "telefone": "+558232820000"
+  },
+  {
+    "id": "al_007",
+    "nome": "Pousada das Galés",
+    "cidade": "maragogi",
+    "estado": "AL",
+    "bairro": "Praia de Maragogi",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "piscina",
+      "varanda"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "praia",
+      "casal",
+      "natureza",
+      "custo-benefício",
+      "recife de coral"
+    ],
+    "descricao": "Pousada charmosa frente ao mar de Maragogi. Vista privilegiada para os recifes de corais e piscinas naturais.",
+    "link_reserva": "https://booking.com/hotel/galés-maragogi",
+    "telefone": "+558232821000"
+  },
+  {
+    "id": "ba_msp_001",
+    "nome": "Hotel Anima",
+    "cidade": "morro de são paulo",
+    "estado": "BA",
+    "bairro": "Segunda Praia",
+    "preco_min": 350,
+    "preco_max": 580,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "vista para o mar"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "luxo",
+      "casal",
+      "praia",
+      "romântico",
+      "seguro"
+    ],
+    "descricao": "Hotel de charme na Segunda Praia com vista de tirar o fôlego. O mais sofisticado de Morro de São Paulo.",
+    "link_reserva": "https://booking.com/hotel/anima-morro",
+    "telefone": "+557532520000"
+  },
+  {
+    "id": "ba_msp_002",
+    "nome": "Pousada Ilha da Saudade",
+    "cidade": "morro de são paulo",
+    "estado": "BA",
+    "bairro": "Primeira Praia",
+    "preco_min": 200,
+    "preco_max": 340,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "terraço",
+      "hammock"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "custo-benefício",
+      "praia",
+      "amigos",
+      "casal",
+      "natureza"
+    ],
+    "descricao": "Pousada simples e bem localizada na Primeira Praia. Café da manhã farto e equipe super atenciosa.",
+    "link_reserva": "https://booking.com/hotel/ilha-saudade-morro",
+    "telefone": "+557532521000"
+  },
+  {
+    "id": "ap_007",
+    "nome": "Hotel Rio Cassiporé",
+    "cidade": "oiapoque",
+    "estado": "AP",
+    "bairro": "Beira Rio",
+    "preco_min": 120,
+    "preco_max": 220,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "vista para o rio"
+    ],
+    "nota": 7.8,
+    "tags": [
+      "aventura",
+      "fronteira",
+      "pesca",
+      "natureza",
+      "ecoturismo"
+    ],
+    "descricao": "Hotel à beira do Rio Oiapoque na fronteira com a Guiana Francesa. Pesca esportiva e contato com povos indígenas.",
+    "link_reserva": "https://booking.com/hotel/cassiporé-oiapoque",
+    "telefone": "+559632561000"
+  },
+  {
+    "id": "ap_006",
+    "nome": "Pousada Oiapoque",
+    "cidade": "oiapoque",
+    "estado": "AP",
+    "bairro": "Centro",
+    "preco_min": 100,
+    "preco_max": 200,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado"
+    ],
+    "nota": 7.5,
+    "tags": [
+      "fronteira",
+      "aventura",
+      "ecoturismo",
+      "Guiana Francesa"
+    ],
+    "descricao": "Pousada na cidade-fronteira com a Guiana Francesa. Base para visitar o Parque do Tumucumaque.",
+    "link_reserva": "https://booking.com/hotel/oiapoque-ap",
+    "telefone": "+559632560000"
+  },
+  {
+    "id": "rj_par_002",
+    "nome": "Casa Turquesa",
+    "cidade": "paraty",
+    "estado": "RJ",
+    "bairro": "Centro Histórico",
+    "preco_min": 480,
+    "preco_max": 780,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "concierge"
+    ],
+    "nota": 9.4,
+    "tags": [
+      "luxo",
+      "romântico",
+      "casal",
+      "histórico",
+      "seguro"
+    ],
+    "descricao": "Hotel boutique de luxo em casarão do século XVIII. Piscina, spa e serviço impecável no coração de Paraty.",
+    "link_reserva": "https://booking.com/hotel/casa-turquesa-paraty",
+    "telefone": "+553371371305"
+  },
+  {
+    "id": "rj_par_001",
+    "nome": "Pousada do Príncipe",
+    "cidade": "paraty",
+    "estado": "RJ",
+    "bairro": "Centro Histórico",
+    "preco_min": 320,
+    "preco_max": 520,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "histórico",
+      "romântico",
+      "casal",
+      "charme",
+      "seguro"
+    ],
+    "descricao": "Pousada no centro histórico tombado de Paraty. Arquitetura colonial e café da manhã exuberante.",
+    "link_reserva": "https://booking.com/hotel/pousada-principe-paraty",
+    "telefone": "+553371221122"
+  },
+  {
+    "id": "am_006",
+    "nome": "Parintins Palace Hotel",
+    "cidade": "parintins",
+    "estado": "AM",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "piscina"
+    ],
+    "nota": 8.0,
+    "tags": [
+      "Festival",
+      "Boi-Bumbá",
+      "cultura",
+      "família",
+      "negócios"
+    ],
+    "descricao": "O melhor hotel de Parintins, cidade do Festival do Boi-Bumbá. Reserve com antecedência no período do festival.",
+    "link_reserva": "https://booking.com/hotel/parintins-palace",
+    "telefone": "+559234200000"
+  },
+  {
+    "id": "am_007",
+    "nome": "Pousada Rio Amazonas",
+    "cidade": "parintins",
+    "estado": "AM",
+    "bairro": "Beira Rio",
+    "preco_min": 130,
+    "preco_max": 250,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "vista para o rio"
+    ],
+    "nota": 7.9,
+    "tags": [
+      "ecoturismo",
+      "cultura",
+      "Boi-Bumbá",
+      "aventura",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada à beira do Rio Amazonas em Parintins. Boa opção durante o Bumba Meu Boi para quem busca custo-benefício.",
+    "link_reserva": "https://booking.com/hotel/rio-amazonas-parintins",
+    "telefone": "+559234201000"
+  },
+  {
+    "id": "al_008",
+    "nome": "Hotel Colonial Penedo",
+    "cidade": "penedo",
+    "estado": "AL",
+    "bairro": "Centro Histórico",
+    "preco_min": 150,
+    "preco_max": 280,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "vista para o rio"
+    ],
+    "nota": 8.3,
+    "tags": [
+      "histórico",
+      "cultura",
+      "turismo",
+      "custo-benefício",
+      "família"
+    ],
+    "descricao": "Hotel no centro histórico de Penedo à beira do Rio São Francisco. Arquitetura colonial preservada e cultura nordestina.",
+    "link_reserva": "https://booking.com/hotel/colonial-penedo",
+    "telefone": "+558236510000"
+  },
+  {
+    "id": "rj_pet_001",
+    "nome": "Solar do Império",
+    "cidade": "petrópolis",
+    "estado": "RJ",
+    "bairro": "Centro",
+    "preco_min": 350,
+    "preco_max": 580,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "histórico",
+      "romântico",
+      "casal",
+      "luxo",
+      "seguro"
+    ],
+    "descricao": "Hotel boutique em palacete histórico do século XIX. Decoração imperial e gastronomia premiada.",
+    "link_reserva": "https://booking.com/hotel/solar-imperio-petropolis",
+    "telefone": "+552422033000"
+  },
+  {
+    "id": "rj_pet_002",
+    "nome": "Pousada Tankamana",
+    "cidade": "petrópolis",
+    "estado": "RJ",
+    "bairro": "Itaipava",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã colonial",
+      "lareira",
+      "piscina aquecida",
+      "wifi",
+      "trilhas"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "natureza",
+      "romântico",
+      "casal",
+      "frio",
+      "família",
+      "seguro"
+    ],
+    "descricao": "Pousada na Serra Fluminense com lareira e café colonial. Perfeito para um fim de semana romântico na montanha.",
+    "link_reserva": "https://booking.com/hotel/tankamana-petropolis",
+    "telefone": "+552242300000"
+  },
+  {
+    "id": "rs_poa_002",
+    "nome": "JW Marriott Porto Alegre",
+    "cidade": "porto alegre",
+    "estado": "RS",
+    "bairro": "Moinhos de Vento",
+    "preco_min": 580,
+    "preco_max": 900,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "concierge",
+      "restaurante"
+    ],
+    "nota": 9.4,
+    "tags": [
+      "luxo",
+      "negócios",
+      "executivo",
+      "casal",
+      "gastronomia",
+      "seguro"
+    ],
+    "descricao": "O hotel mais sofisticado de Porto Alegre, no bairro nobre de Moinhos de Vento. Padrão internacional impecável.",
+    "link_reserva": "https://booking.com/hotel/jw-marriott-poa",
+    "telefone": "+555130044000"
+  },
+  {
+    "id": "rs_poa_005",
+    "nome": "Bourbon Conceição Hotel",
+    "cidade": "porto alegre",
+    "estado": "RS",
+    "bairro": "Moinhos de Vento",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "spa",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "lazer",
+      "família",
+      "gastronomia",
+      "central",
+      "seguro"
+    ],
+    "descricao": "Hotel clássico gaúcho com gastronomia regional premiada. Churrasco e vinho no coração de POA.",
+    "link_reserva": "https://booking.com/hotel/bourbon-poa",
+    "telefone": "+555132211000"
+  },
+  {
+    "id": "rs_poa_001",
+    "nome": "Hotel Laghetto Stilo Bom Fim",
+    "cidade": "porto alegre",
+    "estado": "RS",
+    "bairro": "Bom Fim",
+    "preco_min": 220,
+    "preco_max": 380,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "estacionamento"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "negócios",
+      "lazer",
+      "central",
+      "gastronomia",
+      "custo-benefício",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno no Bom Fim, o bairro mais charmoso de Porto Alegre. Perto de restaurantes e vida cultural.",
+    "link_reserva": "https://booking.com/hotel/laghetto-bom-fim",
+    "telefone": "+555132320000"
+  },
+  {
+    "id": "ba_ps_003",
+    "nome": "Pousada Coqueiros",
+    "cidade": "porto seguro",
+    "estado": "BA",
+    "bairro": "Trancoso",
+    "preco_min": 280,
+    "preco_max": 450,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "terraço"
+    ],
+    "nota": 9.3,
+    "tags": [
+      "romântico",
+      "casal",
+      "charme",
+      "Trancoso",
+      "seguro",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada charmosa em Trancoso com vista para o Quadrado histórico. Café da manhã farto e atmosfera incrível.",
+    "link_reserva": "https://booking.com/hotel/pousada-coqueiros-trancoso",
+    "telefone": "+557336680000"
+  },
+  {
+    "id": "ba_ps_002",
+    "nome": "Arraial D'Ajuda Eco Resort",
+    "cidade": "porto seguro",
+    "estado": "BA",
+    "bairro": "Arraial D'Ajuda",
+    "preco_min": 380,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "praia privativa",
+      "academia"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "luxo",
+      "casal",
+      "romântico",
+      "resort",
+      "praia",
+      "seguro"
+    ],
+    "descricao": "Resort boutique em Arraial D'Ajuda com praia privativa e spa. O melhor da Costa do Descobrimento.",
+    "link_reserva": "https://booking.com/hotel/arraial-eco-resort",
+    "telefone": "+557332880000"
+  },
+  {
+    "id": "ac_003",
+    "nome": "Radisson Rio Branco",
+    "cidade": "rio branco",
+    "estado": "AC",
+    "bairro": "Centro",
+    "preco_min": 280,
+    "preco_max": 440,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "ar condicionado",
+      "restaurante"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "negócios",
+      "executivo",
+      "luxo",
+      "central",
+      "seguro"
+    ],
+    "descricao": "O hotel mais sofisticado de Rio Branco. Padrão internacional para executivos e turistas exigentes.",
+    "link_reserva": "https://booking.com/hotel/radisson-rio-branco",
+    "telefone": "+556832232000"
+  },
+  {
+    "id": "ac_002",
+    "nome": "Hotel Iracema",
+    "cidade": "rio branco",
+    "estado": "AC",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "ar condicionado",
+      "restaurante"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "família",
+      "negócios",
+      "central",
+      "lazer",
+      "seguro"
+    ],
+    "descricao": "O hotel mais tradicional de Rio Branco com piscina e restaurante. Referência na cidade há décadas.",
+    "link_reserva": "https://booking.com/hotel/iracema-rio-branco",
+    "telefone": "+556832231000"
+  },
+  {
+    "id": "ac_001",
+    "nome": "Pousada Nativos",
+    "cidade": "rio branco",
+    "estado": "AC",
+    "bairro": "Centro",
+    "preco_min": 150,
+    "preco_max": 280,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado",
+      "estacionamento"
+    ],
+    "nota": 8.2,
+    "tags": [
+      "custo-benefício",
+      "negócios",
+      "central",
+      "seguro"
+    ],
+    "descricao": "Pousada aconchegante no centro de Rio Branco. Boa estrutura e atendimento familiar.",
+    "link_reserva": "https://booking.com/hotel/nativos-rio-branco",
+    "telefone": "+556832230000"
+  },
+  {
+    "id": "rj_003",
+    "nome": "Hotel Santa Teresa",
+    "cidade": "rio de janeiro",
+    "bairro": "Santa Teresa",
+    "preco_min": 280,
+    "preco_max": 420,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "restaurante",
+      "vista panorâmica"
+    ],
+    "nota": 9.3,
+    "tags": [
+      "romântico",
+      "arte",
+      "casal",
+      "charme",
+      "vista panorâmica",
+      "seguro"
+    ],
+    "descricao": "Hotel boutique no bairro boêmio de Santa Teresa com vista panorâmica do Rio. Experiência única e memorável.",
+    "link_reserva": "https://booking.com/hotel/santa-teresa",
+    "telefone": "+552133800000"
+  },
+  {
+    "id": "rj_002",
+    "nome": "Mango Tree Ipanema",
+    "cidade": "rio de janeiro",
+    "bairro": "Ipanema",
+    "preco_min": 350,
+    "preco_max": 520,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "vista para o mar"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "praia",
+      "casal",
+      "romântico",
+      "luxo",
+      "vista para o mar",
+      "seguro"
+    ],
+    "descricao": "Em frente à praia de Ipanema com piscina e vista para o mar. Endereço premium para casais.",
+    "link_reserva": "https://booking.com/hotel/mango-tree-ipanema",
+    "telefone": "+552125110000"
+  },
+  {
+    "id": "rj_001",
+    "nome": "Hotel Atlântico Copacabana",
+    "cidade": "rio de janeiro",
+    "bairro": "Copacabana",
+    "preco_min": 250,
+    "preco_max": 380,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado"
+    ],
+    "nota": 8.6,
+    "tags": [
+      "praia",
+      "custo-benefício",
+      "turismo",
+      "casal",
+      "seguro"
+    ],
+    "descricao": "A 200m da praia de Copacabana com café da manhã incluso. Melhor custo-benefício da região.",
+    "link_reserva": "https://booking.com/hotel/atlantico-copacabana",
+    "telefone": "+552125480000"
+  },
+  {
+    "id": "sal_004",
+    "nome": "Pousada Villa Carmo",
+    "cidade": "salvador",
+    "bairro": "Pelourinho",
+    "preco_min": 150,
+    "preco_max": 220,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "terraço"
+    ],
+    "nota": 9.4,
+    "tags": [
+      "custo-benefício",
+      "romântico",
+      "casal",
+      "histórico",
+      "seguro"
+    ],
+    "descricao": "Pequena pousada boutique com terraço e café da manhã caseiro. A mais bem avaliada do Pelourinho.",
+    "link_reserva": "https://booking.com/hotel/villa-carmo",
+    "telefone": "+557132420900"
+  },
+  {
+    "id": "sal_001",
+    "nome": "Pousada do Pilar",
+    "cidade": "salvador",
+    "bairro": "Pelourinho",
+    "preco_min": 180,
+    "preco_max": 280,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "custo-benefício",
+      "histórico",
+      "casal",
+      "turismo",
+      "seguro"
+    ],
+    "descricao": "Charmosa pousada no coração do Pelourinho, patrimônio histórico. Ideal para casais que querem viver a cultura baiana.",
+    "link_reserva": "https://booking.com/hotel/pousada-pilar",
+    "telefone": "+557132431234"
+  },
+  {
+    "id": "sal_002",
+    "nome": "Wish Hotel da Bahia",
+    "cidade": "salvador",
+    "bairro": "Ondina",
+    "preco_min": 350,
+    "preco_max": 500,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "wifi",
+      "estacionamento",
+      "academia"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "luxo",
+      "praia",
+      "casal",
+      "família",
+      "seguro",
+      "vista para o mar"
+    ],
+    "descricao": "Hotel de alto padrão com vista para o mar em Ondina. Piscina, spa e estrutura completa para relaxar.",
+    "link_reserva": "https://booking.com/hotel/wish-bahia",
+    "telefone": "+557133280900"
+  },
+  {
+    "id": "sp_003",
+    "nome": "Hotel Fasano São Paulo",
+    "cidade": "são paulo",
+    "bairro": "Jardins",
+    "preco_min": 800,
+    "preco_max": 1200,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "restaurante gourmet",
+      "wifi",
+      "concierge",
+      "academia"
+    ],
+    "nota": 9.7,
+    "tags": [
+      "luxo máximo",
+      "gastronomia",
+      "casal",
+      "romântico",
+      "executivo",
+      "seguro"
+    ],
+    "descricao": "O hotel mais icônico de São Paulo no bairro mais chique. Gastronomia excepcional e serviço impecável.",
+    "link_reserva": "https://booking.com/hotel/fasano-sp",
+    "telefone": "+551138969999"
+  },
+  {
+    "id": "sp_001",
+    "nome": "Hotel Unique",
+    "cidade": "são paulo",
+    "bairro": "Jardim Paulista",
+    "preco_min": 600,
+    "preco_max": 900,
+    "amenities": [
+      "café da manhã",
+      "piscina rooftop",
+      "spa",
+      "restaurante",
+      "wifi",
+      "concierge"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo",
+      "romântico",
+      "casal",
+      "gastronomia",
+      "design",
+      "seguro"
+    ],
+    "descricao": "Ícone da arquitetura paulistana com piscina rooftop e restaurante premiado. Para quem não abre mão do melhor.",
+    "link_reserva": "https://booking.com/hotel/unique-sp",
+    "telefone": "+551130554700"
+  },
+  {
+    "id": "sp_005",
+    "nome": "Pullman Vila Olímpia",
+    "cidade": "são paulo",
+    "bairro": "Vila Olímpia",
+    "preco_min": 420,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "spa",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "negócios",
+      "gastronomia",
+      "vida noturna",
+      "amigos",
+      "agito",
+      "seguro"
+    ],
+    "descricao": "No coração da Vila Olímpia, rodeado de restaurantes e baladas. Excelente para lazer com amigos.",
+    "link_reserva": "https://booking.com/hotel/pullman-vila-olimpia",
+    "telefone": "+551130450000"
+  },
+  {
+    "id": "sp_uba_001",
+    "nome": "Recanto das Toninhas",
+    "cidade": "ubatuba",
+    "estado": "SP",
+    "bairro": "Toninhas",
+    "preco_min": 280,
+    "preco_max": 480,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "estacionamento",
+      "praia privativa"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "praia",
+      "família",
+      "natureza",
+      "casal",
+      "seguro"
+    ],
+    "descricao": "Pousada frente ao mar na Praia das Toninhas. Águas cristalinas e estrutura completa para a família.",
+    "link_reserva": "https://booking.com/hotel/toninhas-ubatuba",
+    "telefone": "+551238320000"
+  },
+  {
+    "id": "sp_uba_002",
+    "nome": "Pousada Águas de Ubatuba",
+    "cidade": "ubatuba",
+    "estado": "SP",
+    "bairro": "Itamambuca",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "varanda",
+      "jardim"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "surf",
+      "natureza",
+      "amigos",
+      "casal",
+      "praia",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada tranquila em Itamambuca, paraíso dos surfistas. Ambiente descontraído e natureza preservada.",
+    "link_reserva": "https://booking.com/hotel/aguas-ubatuba",
+    "telefone": "+551238321000"
+  },
+  {
+    "id": "es_001",
+    "nome": "Hotel Senac Ilha do Boi",
+    "cidade": "vitória",
+    "estado": "ES",
+    "bairro": "Ilha do Boi",
+    "preco_min": 380,
+    "preco_max": 620,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "spa",
+      "academia",
+      "wifi",
+      "restaurante",
+      "vista para o mar"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "luxo",
+      "casal",
+      "lazer",
+      "gastronomia",
+      "seguro",
+      "vista para o mar"
+    ],
+    "descricao": "Hotel boutique na Ilha do Boi com vista panorâmica da Baía de Vitória. Gastronomia capixaba premiada.",
+    "link_reserva": "https://booking.com/hotel/senac-ilha-do-boi",
+    "telefone": "+552733450000"
+  },
+  {
+    "id": "es_002",
+    "nome": "Hotel Novotel Vitória",
+    "cidade": "vitória",
+    "estado": "ES",
+    "bairro": "Enseada do Suá",
+    "preco_min": 280,
+    "preco_max": 460,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "academia",
+      "wifi",
+      "restaurante"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "negócios",
+      "executivo",
+      "lazer",
+      "central",
+      "seguro"
+    ],
+    "descricao": "Hotel moderno na Enseada do Suá com fácil acesso ao aeroporto e centro empresarial de Vitória.",
+    "link_reserva": "https://booking.com/hotel/novotel-vitoria",
+    "telefone": "+552733451000"
+  },
+  {
+    "id": "es_003",
+    "nome": "Quality Hotel Vitória",
+    "cidade": "vitória",
+    "estado": "ES",
+    "bairro": "Praia do Canto",
+    "preco_min": 220,
+    "preco_max": 380,
+    "amenities": [
+      "café da manhã",
+      "piscina",
+      "wifi",
+      "academia"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "negócios",
+      "custo-benefício",
+      "praia",
+      "lazer",
+      "seguro"
+    ],
+    "descricao": "Hotel confortável na Praia do Canto, o bairro mais nobre de Vitória. Próximo a restaurantes e bares.",
+    "link_reserva": "https://booking.com/hotel/quality-vitoria",
+    "telefone": "+552733452000"
+  },
+  {
+    "id": "ac_006",
+    "nome": "Pousada Ecológica Seringal",
+    "cidade": "xapuri",
+    "estado": "AC",
+    "bairro": "Zona Rural",
+    "preco_min": 130,
+    "preco_max": 240,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "trilhas",
+      "observação de fauna"
+    ],
+    "nota": 8.3,
+    "tags": [
+      "ecoturismo",
+      "aventura",
+      "natureza",
+      "história",
+      "Amazônia"
+    ],
+    "descricao": "Pousada no coração do seringal histórico. Trilhas na floresta e experiência autêntica da Amazônia acreana.",
+    "link_reserva": "https://booking.com/hotel/seringal-xapuri",
+    "telefone": "+556832341000"
+  },
+  {
+    "id": "ac_005",
+    "nome": "Hotel Xapuri",
+    "cidade": "xapuri",
+    "estado": "AC",
+    "bairro": "Centro",
+    "preco_min": 100,
+    "preco_max": 200,
+    "amenities": [
+      "café da manhã",
+      "wifi",
+      "ar condicionado"
+    ],
+    "nota": 7.8,
+    "tags": [
+      "ecoturismo",
+      "história",
+      "Chico Mendes",
+      "natureza"
+    ],
+    "descricao": "Hotel simples na cidade berço do movimento seringueiro. Base para visitar o Seringal Vila Bela.",
+    "link_reserva": "https://booking.com/hotel/xapuri-ac",
+    "telefone": "+556832340000"
+  },
+  {
+    "id": "go_001",
+    "nome": "Hotel Prive Ouest",
+    "cidade": "Goiânia",
+    "bairro": "Setor Oeste",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "academia",
+      "estacionamento"
+    ],
+    "nota": 8.2,
+    "tags": [
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Hotel executivo bem localizado no setor oeste de Goiânia.",
+    "link_reserva": "https://booking.com/hotel/br/prive-ouest",
+    "telefone": "(62) 3245-0000"
+  },
+  {
+    "id": "go_002",
+    "nome": "Comfort Inn Goiânia",
+    "cidade": "Goiânia",
+    "bairro": "Setor Bueno",
+    "preco_min": 160,
+    "preco_max": 280,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "estacionamento"
+    ],
+    "nota": 8.0,
+    "tags": [
+      "negócios",
+      "custo-benefício"
+    ],
+    "descricao": "Hotel confortável no coração do Setor Bueno.",
+    "link_reserva": "https://booking.com/hotel/br/comfort-goiania",
+    "telefone": "(62) 3256-7000"
+  },
+  {
+    "id": "go_003",
+    "nome": "Pousada do Ipê",
+    "cidade": "Pirenópolis",
+    "bairro": "Centro Histórico",
+    "preco_min": 200,
+    "preco_max": 380,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "café colonial",
+      "jardim"
+    ],
+    "nota": 9.1,
+    "tags": [
+      "ecoturismo",
+      "romântico",
+      "história"
+    ],
+    "descricao": "Charmosa pousada no centro histórico de Pirenópolis.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-do-ipe-pirenopolis",
+    "telefone": "(62) 3331-1200"
+  },
+  {
+    "id": "go_004",
+    "nome": "Thermas di Roma Hotel",
+    "cidade": "Caldas Novas",
+    "bairro": "Centro",
+    "preco_min": 250,
+    "preco_max": 450,
+    "amenities": [
+      "piscinas termais",
+      "Wi-Fi",
+      "restaurante",
+      "kids club"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "termas",
+      "família",
+      "lazer"
+    ],
+    "descricao": "Resort com acesso às famosas águas termais de Caldas Novas.",
+    "link_reserva": "https://booking.com/hotel/br/thermas-di-roma",
+    "telefone": "(64) 3453-1500"
+  },
+  {
+    "id": "ma_001",
+    "nome": "Hotel Brisamar São Luís",
+    "cidade": "São Luís",
+    "bairro": "Ponta d'Areia",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "vista mar"
+    ],
+    "nota": 8.3,
+    "tags": [
+      "praia",
+      "lazer"
+    ],
+    "descricao": "Hotel à beira da Praia de Ponta d'Areia com vista privilegiada.",
+    "link_reserva": "https://booking.com/hotel/br/brisamar-sao-luis",
+    "telefone": "(98) 3227-0000"
+  },
+  {
+    "id": "ma_002",
+    "nome": "Pousada Portas da Amazônia",
+    "cidade": "São Luís",
+    "bairro": "Centro Histórico",
+    "preco_min": 150,
+    "preco_max": 250,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "varanda"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "histórico",
+      "cultura",
+      "charme"
+    ],
+    "descricao": "Pousada colonial no centro histórico tombado da UNESCO.",
+    "link_reserva": "https://booking.com/hotel/br/portas-da-amazonia",
+    "telefone": "(98) 3222-9937"
+  },
+  {
+    "id": "ma_003",
+    "nome": "Pousada Encantes do Nordeste",
+    "cidade": "Barreirinhas",
+    "bairro": "Centro",
+    "preco_min": 160,
+    "preco_max": 280,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "passeios",
+      "café da manhã"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "lençóis maranhenses",
+      "aventura",
+      "ecoturismo"
+    ],
+    "descricao": "Base ideal para explorar os Lençóis Maranhenses a 5 min das dunas.",
+    "link_reserva": "https://booking.com/hotel/br/encantes-barreirinhas",
+    "telefone": "(98) 99117-2233"
+  },
+  {
+    "id": "ma_004",
+    "nome": "Pousada Lins",
+    "cidade": "Barreirinhas",
+    "bairro": "Beira Rio",
+    "preco_min": 140,
+    "preco_max": 240,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "hammock",
+      "transfer dunas"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "lençóis maranhenses",
+      "econômico"
+    ],
+    "descricao": "Pousada familiar com organização de passeios às lagoas.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-lins",
+    "telefone": "(98) 3349-0099"
+  },
+  {
+    "id": "mt_001",
+    "nome": "Araras Hotel Cuiabá",
+    "cidade": "Cuiabá",
+    "bairro": "Centro",
+    "preco_min": 220,
+    "preco_max": 380,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.4,
+    "tags": [
+      "pantanal",
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Hotel bem localizado em Cuiabá, porta de entrada para o Pantanal.",
+    "link_reserva": "https://booking.com/hotel/br/araras-cuiaba",
+    "telefone": "(65) 3623-0000"
+  },
+  {
+    "id": "mt_002",
+    "nome": "Pousada da Chapada",
+    "cidade": "Chapada dos Guimarães",
+    "bairro": "Centro",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "trilhas",
+      "café da manhã"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "ecoturismo",
+      "aventura",
+      "natureza"
+    ],
+    "descricao": "Pousada próxima ao Parque Nacional da Chapada dos Guimarães.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-da-chapada",
+    "telefone": "(65) 3301-1200"
+  },
+  {
+    "id": "mt_003",
+    "nome": "Cristalino Lodge",
+    "cidade": "Alta Floresta",
+    "bairro": "Zona Rural",
+    "preco_min": 800,
+    "preco_max": 1400,
+    "amenities": [
+      "Wi-Fi",
+      "all inclusive",
+      "birdwatching",
+      "canoagem"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "ecoturismo",
+      "luxo",
+      "birdwatching"
+    ],
+    "descricao": "Eco-lodge de renome mundial no Parque Nacional do Cristalino.",
+    "link_reserva": "https://booking.com/hotel/br/cristalino-lodge",
+    "telefone": "(66) 3521-1396"
+  },
+  {
+    "id": "ms_001",
+    "nome": "Hotel Nacional Inn Campo Grande",
+    "cidade": "Campo Grande",
+    "bairro": "Centro",
+    "preco_min": 170,
+    "preco_max": 290,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.1,
+    "tags": [
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Hotel executivo no centro de Campo Grande com ótima localização.",
+    "link_reserva": "https://booking.com/hotel/br/nacional-inn-campo-grande",
+    "telefone": "(67) 3316-6000"
+  },
+  {
+    "id": "ms_002",
+    "nome": "Zagaia Eco-Resort",
+    "cidade": "Bonito",
+    "bairro": "Zona Rural",
+    "preco_min": 350,
+    "preco_max": 700,
+    "amenities": [
+      "piscinas",
+      "Wi-Fi",
+      "restaurante",
+      "SPA",
+      "passeios"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "ecoturismo",
+      "aventura",
+      "resort"
+    ],
+    "descricao": "Resort completo em Bonito com acesso às melhores atrações naturais.",
+    "link_reserva": "https://booking.com/hotel/br/zagaia-bonito",
+    "telefone": "(67) 3255-5500"
+  },
+  {
+    "id": "ms_003",
+    "nome": "Pousada Muito Bonito",
+    "cidade": "Bonito",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "café da manhã",
+      "passeios"
+    ],
+    "nota": 8.6,
+    "tags": [
+      "ecoturismo",
+      "custo-benefício"
+    ],
+    "descricao": "Pousada aconchegante no coração de Bonito.",
+    "link_reserva": "https://booking.com/hotel/br/muito-bonito-pousada",
+    "telefone": "(67) 3255-1645"
+  },
+  {
+    "id": "mg_001",
+    "nome": "Mercure BH Lourdes",
+    "cidade": "Belo Horizonte",
+    "bairro": "Lourdes",
+    "preco_min": 250,
+    "preco_max": 450,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "academia",
+      "restaurante"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Hotel moderno no bairro mais charmoso de BH.",
+    "link_reserva": "https://booking.com/hotel/br/mercure-bh-lourdes",
+    "telefone": "(31) 3261-0000"
+  },
+  {
+    "id": "mg_002",
+    "nome": "Hotel Solar do Rosário",
+    "cidade": "Ouro Preto",
+    "bairro": "Centro Histórico",
+    "preco_min": 280,
+    "preco_max": 500,
+    "amenities": [
+      "Wi-Fi",
+      "café colonial",
+      "varanda",
+      "estacionamento"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "histórico",
+      "romântico",
+      "cultura"
+    ],
+    "descricao": "Hotel colonial com vista deslumbrante para Ouro Preto.",
+    "link_reserva": "https://booking.com/hotel/br/solar-do-rosario-ouro-preto",
+    "telefone": "(31) 3551-5200"
+  },
+  {
+    "id": "mg_003",
+    "nome": "Pousada Três Portas",
+    "cidade": "Tiradentes",
+    "bairro": "Centro Histórico",
+    "preco_min": 300,
+    "preco_max": 550,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "jardim",
+      "piscina"
+    ],
+    "nota": 9.2,
+    "tags": [
+      "histórico",
+      "romântico",
+      "charme"
+    ],
+    "descricao": "Pousada colonial encantadora no centro histórico de Tiradentes.",
+    "link_reserva": "https://booking.com/hotel/br/tres-portas-tiradentes",
+    "telefone": "(32) 3355-1444"
+  },
+  {
+    "id": "pa_001",
+    "nome": "Radisson Hotel Belém",
+    "cidade": "Belém",
+    "bairro": "Batista Campos",
+    "preco_min": 250,
+    "preco_max": 450,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "academia"
+    ],
+    "nota": 8.6,
+    "tags": [
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Um dos melhores hotéis de Belém, próximo ao Ver-o-Peso.",
+    "link_reserva": "https://booking.com/hotel/br/radisson-belem",
+    "telefone": "(91) 4009-3000"
+  },
+  {
+    "id": "pa_002",
+    "nome": "Hotel Vert Belém",
+    "cidade": "Belém",
+    "bairro": "Nazaré",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.1,
+    "tags": [
+      "familiar",
+      "negócios"
+    ],
+    "descricao": "Hotel confortável em Belém com ótimo café da manhã amazônico.",
+    "link_reserva": "https://booking.com/hotel/br/vert-belem",
+    "telefone": "(91) 3222-0000"
+  },
+  {
+    "id": "pa_003",
+    "nome": "Pousada Alter do Chão",
+    "cidade": "Alter do Chão",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "barcos",
+      "café da manhã"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "praia fluvial",
+      "ecoturismo",
+      "relaxamento"
+    ],
+    "descricao": "Pousada a 200m da famosa Praia de Alter do Chão no Tapajós.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-alter-do-chao",
+    "telefone": "(93) 99123-4567"
+  },
+  {
+    "id": "pb_001",
+    "nome": "Bessa Beach Hotel",
+    "cidade": "João Pessoa",
+    "bairro": "Bessa",
+    "preco_min": 200,
+    "preco_max": 380,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "praia próxima"
+    ],
+    "nota": 8.4,
+    "tags": [
+      "praia",
+      "família",
+      "lazer"
+    ],
+    "descricao": "Hotel à beira da Praia do Bessa, a mais bela de João Pessoa.",
+    "link_reserva": "https://booking.com/hotel/br/bessa-beach",
+    "telefone": "(83) 3247-0000"
+  },
+  {
+    "id": "pb_002",
+    "nome": "Hotel Globo João Pessoa",
+    "cidade": "João Pessoa",
+    "bairro": "Centro",
+    "preco_min": 150,
+    "preco_max": 260,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "estacionamento"
+    ],
+    "nota": 7.9,
+    "tags": [
+      "econômico",
+      "negócios"
+    ],
+    "descricao": "Hotel clássico no centro de João Pessoa com boa localização.",
+    "link_reserva": "https://booking.com/hotel/br/hotel-globo-jp",
+    "telefone": "(83) 3221-7400"
+  },
+  {
+    "id": "pb_003",
+    "nome": "Pousada Rancho das Raízes",
+    "cidade": "Campina Grande",
+    "bairro": "Mirante",
+    "preco_min": 160,
+    "preco_max": 280,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "piscina"
+    ],
+    "nota": 8.2,
+    "tags": [
+      "forró",
+      "cultura",
+      "familiar"
+    ],
+    "descricao": "Pousada em Campina Grande, capital do maior São João do mundo.",
+    "link_reserva": "https://booking.com/hotel/br/rancho-das-raizes",
+    "telefone": "(83) 3310-0000"
+  },
+  {
+    "id": "pr_001",
+    "nome": "Bourbon Curitiba Business",
+    "cidade": "Curitiba",
+    "bairro": "Batel",
+    "preco_min": 230,
+    "preco_max": 420,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "academia",
+      "restaurante"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Hotel executivo no sofisticado bairro Batel de Curitiba.",
+    "link_reserva": "https://booking.com/hotel/br/bourbon-curitiba",
+    "telefone": "(41) 3312-4000"
+  },
+  {
+    "id": "pr_002",
+    "nome": "Golden Park Foz do Iguaçu",
+    "cidade": "Foz do Iguaçu",
+    "bairro": "Vila Yolanda",
+    "preco_min": 280,
+    "preco_max": 500,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "transfer cataratas"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "cataratas",
+      "família",
+      "aventura"
+    ],
+    "descricao": "Resort com acesso fácil às Cataratas do Iguaçu.",
+    "link_reserva": "https://booking.com/hotel/br/golden-park-foz",
+    "telefone": "(45) 3521-1234"
+  },
+  {
+    "id": "pr_003",
+    "nome": "Hotel Nhundiaquara",
+    "cidade": "Morretes",
+    "bairro": "Centro Histórico",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "jardim",
+      "rio"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "histórico",
+      "natureza",
+      "tranquilo"
+    ],
+    "descricao": "Hotel charmoso em Morretes, uma das cidades mais bonitas do PR.",
+    "link_reserva": "https://booking.com/hotel/br/nhundiaquara-morretes",
+    "telefone": "(41) 3462-1228"
+  },
+  {
+    "id": "pe_001",
+    "nome": "Hotel Atlante Plaza",
+    "cidade": "Recife",
+    "bairro": "Boa Viagem",
+    "preco_min": 280,
+    "preco_max": 520,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "academia",
+      "vista mar"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "praia",
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Hotel de luxo em Boa Viagem com vista para o mar.",
+    "link_reserva": "https://booking.com/hotel/br/atlante-plaza",
+    "telefone": "(81) 3302-3333"
+  },
+  {
+    "id": "pe_002",
+    "nome": "Nannai Resort & Spa",
+    "cidade": "Porto de Galinhas",
+    "bairro": "Muro Alto",
+    "preco_min": 600,
+    "preco_max": 1200,
+    "amenities": [
+      "piscinas",
+      "Wi-Fi",
+      "restaurante",
+      "SPA",
+      "praia privativa"
+    ],
+    "nota": 9.5,
+    "tags": [
+      "luxo",
+      "praia",
+      "romântico",
+      "resort"
+    ],
+    "descricao": "Um dos melhores resorts do Brasil em Porto de Galinhas.",
+    "link_reserva": "https://booking.com/hotel/br/nannai-resort",
+    "telefone": "(81) 3552-0100"
+  },
+  {
+    "id": "pe_003",
+    "nome": "Pousada Maravilha Noronha",
+    "cidade": "Fernando de Noronha",
+    "bairro": "Sueste",
+    "preco_min": 900,
+    "preco_max": 1800,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "café da manhã",
+      "vista mar"
+    ],
+    "nota": 9.7,
+    "tags": [
+      "luxo",
+      "mergulho",
+      "natureza",
+      "romântico"
+    ],
+    "descricao": "A mais premiada pousada de Fernando de Noronha.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-maravilha-noronha",
+    "telefone": "(81) 3619-0028"
+  },
+  {
+    "id": "pi_001",
+    "nome": "Hotel Rio Poty",
+    "cidade": "Teresina",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 320,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.0,
+    "tags": [
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Um dos hotéis mais tradicionais de Teresina.",
+    "link_reserva": "https://booking.com/hotel/br/rio-poty-teresina",
+    "telefone": "(86) 3221-2011"
+  },
+  {
+    "id": "pi_002",
+    "nome": "Pousada dos Ventos",
+    "cidade": "Parnaíba",
+    "bairro": "Porto das Barcas",
+    "preco_min": 160,
+    "preco_max": 280,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "passeios delta"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "delta",
+      "natureza",
+      "tranquilo"
+    ],
+    "descricao": "Pousada próxima ao Delta do Parnaíba, maior delta das Américas.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-dos-ventos-parnaiba",
+    "telefone": "(86) 3323-0077"
+  },
+  {
+    "id": "pi_003",
+    "nome": "Rancho Ecológico Delta",
+    "cidade": "Parnaíba",
+    "bairro": "Delta",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "Wi-Fi",
+      "barcos",
+      "passeios",
+      "café da manhã"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "delta",
+      "ecoturismo",
+      "aventura"
+    ],
+    "descricao": "Lodging no Delta do Parnaíba com passeios de barco inclusos.",
+    "link_reserva": "https://booking.com/hotel/br/rancho-ecologico-delta",
+    "telefone": "(86) 99200-1234"
+  },
+  {
+    "id": "rn_001",
+    "nome": "Serhs Natal Grand Hotel",
+    "cidade": "Natal",
+    "bairro": "Ponta Negra",
+    "preco_min": 250,
+    "preco_max": 480,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "academia",
+      "praia próxima"
+    ],
+    "nota": 8.7,
+    "tags": [
+      "praia",
+      "família",
+      "resort"
+    ],
+    "descricao": "Hotel completo em Ponta Negra, a melhor praia de Natal.",
+    "link_reserva": "https://booking.com/hotel/br/serhs-natal-grand",
+    "telefone": "(84) 3220-2900"
+  },
+  {
+    "id": "rn_002",
+    "nome": "Pousada Tibau do Sul",
+    "cidade": "Pipa",
+    "bairro": "Centro",
+    "preco_min": 200,
+    "preco_max": 380,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "café da manhã",
+      "trilhas"
+    ],
+    "nota": 8.9,
+    "tags": [
+      "praia",
+      "natureza",
+      "romântico"
+    ],
+    "descricao": "Pousada com vista para as falésias de Pipa.",
+    "link_reserva": "https://booking.com/hotel/br/tibau-pipa",
+    "telefone": "(84) 3246-2130"
+  },
+  {
+    "id": "rn_003",
+    "nome": "Hotel Genipabú Dunas",
+    "cidade": "Genipabu",
+    "bairro": "Praia",
+    "preco_min": 180,
+    "preco_max": 300,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "buggy",
+      "café da manhã"
+    ],
+    "nota": 8.3,
+    "tags": [
+      "dunas",
+      "buggy",
+      "praia"
+    ],
+    "descricao": "Hotel nas famosas dunas de Genipabu com passeios de buggy.",
+    "link_reserva": "https://booking.com/hotel/br/hotel-genipabú-dunas",
+    "telefone": "(84) 3225-2100"
+  },
+  {
+    "id": "ro_001",
+    "nome": "Hotel Central Porto Velho",
+    "cidade": "Porto Velho",
+    "bairro": "Centro",
+    "preco_min": 170,
+    "preco_max": 290,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 7.9,
+    "tags": [
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Hotel bem localizado no centro de Porto Velho.",
+    "link_reserva": "https://booking.com/hotel/br/central-porto-velho",
+    "telefone": "(69) 3224-2002"
+  },
+  {
+    "id": "ro_002",
+    "nome": "Vila Rica Hotel Porto Velho",
+    "cidade": "Porto Velho",
+    "bairro": "Centro",
+    "preco_min": 190,
+    "preco_max": 340,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "academia"
+    ],
+    "nota": 8.2,
+    "tags": [
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Um dos melhores hotéis de Porto Velho com estrutura completa.",
+    "link_reserva": "https://booking.com/hotel/br/vila-rica-porto-velho",
+    "telefone": "(69) 3216-1600"
+  },
+  {
+    "id": "rr_001",
+    "nome": "Hotel Ekinox Boa Vista",
+    "cidade": "Boa Vista",
+    "bairro": "Centro",
+    "preco_min": 180,
+    "preco_max": 310,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.1,
+    "tags": [
+      "negócios",
+      "familiar"
+    ],
+    "descricao": "Hotel moderno no centro de Boa Vista com piscina.",
+    "link_reserva": "https://booking.com/hotel/br/ekinox-boa-vista",
+    "telefone": "(95) 3623-1100"
+  },
+  {
+    "id": "rr_002",
+    "nome": "Pousada Araçari",
+    "cidade": "Boa Vista",
+    "bairro": "São Vicente",
+    "preco_min": 150,
+    "preco_max": 260,
+    "amenities": [
+      "Wi-Fi",
+      "café da manhã",
+      "jardim"
+    ],
+    "nota": 7.9,
+    "tags": [
+      "econômico",
+      "familiar"
+    ],
+    "descricao": "Pousada aconchegante em Boa Vista próxima ao centro.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-aracari-bv",
+    "telefone": "(95) 3224-5678"
+  },
+  {
+    "id": "se_001",
+    "nome": "Radisson Aracaju",
+    "cidade": "Aracaju",
+    "bairro": "Atalaia",
+    "preco_min": 250,
+    "preco_max": 450,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "academia",
+      "vista mar"
+    ],
+    "nota": 8.8,
+    "tags": [
+      "praia",
+      "negócios",
+      "conforto"
+    ],
+    "descricao": "Hotel de referência em Aracaju com vista para o Atlântico.",
+    "link_reserva": "https://booking.com/hotel/br/radisson-aracaju",
+    "telefone": "(79) 3243-2000"
+  },
+  {
+    "id": "se_002",
+    "nome": "Pousada do Vaqueiro Aracaju",
+    "cidade": "Aracaju",
+    "bairro": "Luzia",
+    "preco_min": 160,
+    "preco_max": 280,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "churrasqueira",
+      "café da manhã"
+    ],
+    "nota": 8.2,
+    "tags": [
+      "familiar",
+      "econômico"
+    ],
+    "descricao": "Pousada familiar com estrutura descontraída em Aracaju.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-vaqueiro-aracaju",
+    "telefone": "(79) 3217-4400"
+  },
+  {
+    "id": "se_003",
+    "nome": "Pousada Vale do Canindé",
+    "cidade": "Canindé de São Francisco",
+    "bairro": "Margem do Rio",
+    "preco_min": 180,
+    "preco_max": 300,
+    "amenities": [
+      "Wi-Fi",
+      "canoagem",
+      "rapel",
+      "café da manhã"
+    ],
+    "nota": 8.5,
+    "tags": [
+      "aventura",
+      "cânion",
+      "ecoturismo"
+    ],
+    "descricao": "Pousada base para explorar o Cânion do Rio São Francisco.",
+    "link_reserva": "https://booking.com/hotel/br/vale-do-caninde",
+    "telefone": "(79) 3464-0123"
+  },
+  {
+    "id": "to_001",
+    "nome": "Pousada dos Girassóis",
+    "cidade": "Palmas",
+    "bairro": "Centro",
+    "preco_min": 200,
+    "preco_max": 360,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "restaurante",
+      "estacionamento"
+    ],
+    "nota": 8.3,
+    "tags": [
+      "familiar",
+      "negócios"
+    ],
+    "descricao": "Melhor localização em Palmas, a capital mais jovem do Brasil.",
+    "link_reserva": "https://booking.com/hotel/br/pousada-dos-girassois",
+    "telefone": "(63) 3219-0000"
+  },
+  {
+    "id": "to_002",
+    "nome": "Pousada Jalapão Eco",
+    "cidade": "Jalapão",
+    "bairro": "Mateiros",
+    "preco_min": 300,
+    "preco_max": 550,
+    "amenities": [
+      "Wi-Fi",
+      "passeios",
+      "café da manhã",
+      "4x4"
+    ],
+    "nota": 9.0,
+    "tags": [
+      "aventura",
+      "ecoturismo",
+      "natureza"
+    ],
+    "descricao": "Base para explorar as serras e fervedouros do Jalapão.",
+    "link_reserva": "https://booking.com/hotel/br/jalapao-eco-pousada",
+    "telefone": "(63) 99123-7890"
+  },
+  {
+    "id": "to_003",
+    "nome": "Hotel Ilha do Bananal",
+    "cidade": "Palmas",
+    "bairro": "Lago Norte",
+    "preco_min": 180,
+    "preco_max": 310,
+    "amenities": [
+      "Wi-Fi",
+      "piscina",
+      "café da manhã",
+      "beira lago"
+    ],
+    "nota": 8.0,
+    "tags": [
+      "tranquilo",
+      "natureza"
+    ],
+    "descricao": "Hotel à beira do lago de Palmas com ambiente tranquilo.",
+    "link_reserva": "https://booking.com/hotel/br/ilha-do-bananal-palmas",
+    "telefone": "(63) 3215-4455"
   }
 ]
