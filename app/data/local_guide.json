@@ -1,0 +1,233 @@
+[
+  {
+    "cidade": "salvador",
+    "bairro": "Pelourinho",
+    "nome": "Café Alquimia",
+    "categoria": "cafe",
+    "descricao": "Café colonial dentro de um casarão do século XVIII. Café coado e tapioca imperdíveis."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Pelourinho",
+    "nome": "Restaurante do SENAC",
+    "categoria": "restaurante",
+    "descricao": "Buffet de comida baiana no Pelourinho. Moqueca, vatapá e acarajé a preço justo."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Pelourinho",
+    "nome": "Praça Quincas Berro D'Água",
+    "categoria": "bar",
+    "descricao": "Praça ao ar livre com bares animados e música ao vivo toda noite. O coração do Pelourinho."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Barra",
+    "nome": "Farol da Barra",
+    "categoria": "atração",
+    "descricao": "Farol histórico do século XVII com museu náutico e pôr do sol espetacular."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Barra",
+    "nome": "Praia da Barra",
+    "categoria": "praia",
+    "descricao": "Praia urbana tranquila próxima ao farol, boa para banho e caminhada."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Rio Vermelho",
+    "nome": "Bar do França",
+    "categoria": "bar",
+    "descricao": "Clássico do Rio Vermelho, sempre lotado. Biritas geladas e petiscos baianos desde 1960."
+  },
+  {
+    "cidade": "salvador",
+    "bairro": "Rio Vermelho",
+    "nome": "Yemanjá Restaurante",
+    "categoria": "restaurante",
+    "descricao": "O melhor frutos do mar de Salvador segundo os locais. Moqueca de camarão inigualável."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Copacabana",
+    "nome": "Padaria Brasileira Copacabana",
+    "categoria": "cafe",
+    "descricao": "Café da manhã carioca clássico: pão de queijo, café com leite e suco de laranja. Fila vale a pena."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Copacabana",
+    "nome": "Praia de Copacabana",
+    "categoria": "praia",
+    "descricao": "4km de areia branca com quiosques, voleibol e o famoso calçadão com mosaico português."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Copacabana",
+    "nome": "Devassa Copacabana",
+    "categoria": "bar",
+    "descricao": "Cervejaria artesanal com happy hour animado. Boa varanda para assistir o movimento da Avenida Atlântica."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Ipanema",
+    "nome": "Garota de Ipanema",
+    "categoria": "bar",
+    "descricao": "Bar histórico onde Tom Jobim e Vinícius de Moraes compuseram a famosa bossa nova. Turístico, mas imperdível."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Ipanema",
+    "nome": "Praia de Ipanema",
+    "categoria": "praia",
+    "descricao": "A praia mais famosa do Rio, com postos temáticos, feirinha e pôr do sol na Pedra do Arpoador."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Santa Teresa",
+    "nome": "Aprazível Restaurante",
+    "categoria": "restaurante",
+    "descricao": "Restaurante com jardim tropical e vista panorâmica da Baía de Guanabara. Uma das melhores experiências gastronômicas do Rio."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Santa Teresa",
+    "nome": "Bondinho de Santa Teresa",
+    "categoria": "passeio",
+    "descricao": "Bonde histórico que sobe as ladeiras de Santa Teresa com vista deslumbrante. Atração imperdível."
+  },
+  {
+    "cidade": "rio de janeiro",
+    "bairro": "Lapa",
+    "nome": "Arcos da Lapa",
+    "categoria": "atração",
+    "descricao": "Aqueduto colonial do século XVIII que virou o símbolo da boemia carioca. Região animada às sextas e sábados."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Jardins",
+    "nome": "Padoca do Maní",
+    "categoria": "cafe",
+    "descricao": "Padaria artesanal premiada dos Jardins. Pães artesanais, bolos e café especial de altíssimo nível."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Jardins",
+    "nome": "Mercado Municipal Paulistano",
+    "categoria": "atração",
+    "descricao": "Mercadão clássico de SP com vitrais históricos e o lendário sanduíche de mortadela. 10 min dos Jardins."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Jardins",
+    "nome": "Figueira Rubaiyat",
+    "categoria": "restaurante",
+    "descricao": "Restaurante centenário embaixo de uma enorme figueira. Carnes nobres e ambiente incomparável."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Vila Olímpia",
+    "nome": "Bar Balcão",
+    "categoria": "bar",
+    "descricao": "Bar descolado da Vila Olímpia com petiscos criativos e carta de drinques autorais. Sempre animado."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Vila Olímpia",
+    "nome": "Parque Ibirapuera",
+    "categoria": "passeio",
+    "descricao": "O Central Park paulistano: 1,5km² de verde com museus, ciclovias e shows gratuitos aos domingos. A 10 min da Vila Olímpia."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Morumbi",
+    "nome": "Shopping Cidade Jardim",
+    "categoria": "atração",
+    "descricao": "Shopping ao ar livre com as maiores marcas de luxo do país e arquitetura verde. A 5 min do Novotel."
+  },
+  {
+    "cidade": "são paulo",
+    "bairro": "Centro",
+    "nome": "Café Girondino",
+    "categoria": "cafe",
+    "descricao": "Café histórico do centro de SP fundado em 1887. Perfeito para um break entre os atrativos do centro histórico."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Lagoa da Conceição",
+    "nome": "Café Cultura Lagoa",
+    "categoria": "cafe",
+    "descricao": "Cafeteria charmosa à beira da lagoa com pão de queijo e café especial. Melhor mesa ao pôr do sol."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Lagoa da Conceição",
+    "nome": "Ostradamus",
+    "categoria": "restaurante",
+    "descricao": "O restaurante de ostras mais famoso da ilha. Frutos do mar fresquíssimos com vista para a lagoa."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Lagoa da Conceição",
+    "nome": "John Bull Pub",
+    "categoria": "bar",
+    "descricao": "Pub descontraído com música ao vivo e chope gelado. Ponto de encontro clássico da Lagoa."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Jurerê Internacional",
+    "nome": "Praia de Jurerê",
+    "categoria": "praia",
+    "descricao": "Praia de águas calmas e arena de beach clubs. A mais badalada do verão catarinense."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Centro",
+    "nome": "Mercado Público de Florianópolis",
+    "categoria": "atração",
+    "descricao": "Mercado histórico do século XIX com bares, restaurantes e artesanato local. Alma da cidade."
+  },
+  {
+    "cidade": "florianópolis",
+    "bairro": "Campeche",
+    "nome": "Praia do Campeche",
+    "categoria": "praia",
+    "descricao": "Praia preservada com águas cristalinas e ondas para surf. Uma das mais bonitas da ilha."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "nome": "Café do Loureiro",
+    "categoria": "cafe",
+    "descricao": "Cafeteria histórica no centro de Gramado com chocolate quente artesanal e strudel de maçã."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "nome": "Restaurante Colosseo",
+    "categoria": "restaurante",
+    "descricao": "Gastronomia italiana autêntica com massa fresca e ambiente aquecido. Um dos mais amados de Gramado."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "nome": "Cervejaria Dado Bier",
+    "categoria": "bar",
+    "descricao": "Cervejaria gaúcha com cervejas artesanais e petiscos típicos. Ambiente perfeito para noites frias."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Zona Rural",
+    "nome": "Lago Negro",
+    "categoria": "passeio",
+    "descricao": "Lago sereno rodeado de pinheiros com pedalinhos e paisagem europeia. Passeio clássico e gratuito."
+  },
+  {
+    "cidade": "gramado",
+    "bairro": "Centro",
+    "nome": "Mini Mundo",
+    "categoria": "atração",
+    "descricao": "Parque com miniaturas de construções mundiais em escala 1:24. Encantador para famílias e casais."
+  }
+]
