@@ -65,6 +65,12 @@ O que prefere?
 
 ## Arquitetura
 
+### Atual
+
+![Arquitetura atual](images/now.png)
+
+### Fluxo detalhado
+
 ```
 WhatsApp (usuário)
        ↓
@@ -214,6 +220,10 @@ docker compose up --build
 - [ ] SaaS B2B: hotéis e pousadas respondem e convertem via WhatsApp próprio
 - [ ] Destaque patrocinado com transparência explícita ("parceiro")
 - [ ] Upsell de experiências locais (passeios, restaurantes, transfers)
+
+### Arquitetura Futura
+
+![Arquitetura futura](images/future.png)
 
 ---
 

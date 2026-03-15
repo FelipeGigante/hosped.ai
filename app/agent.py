@@ -47,9 +47,15 @@ R$ [min]–[max]/noite · [bairro] · [amenities principais]
 
 _Valores estimados — confirme no momento da reserva._
 
-O que prefere?
-*1* Reservar opção 1 | *2* Reservar opção 2 | *3* Reservar opção 3 | *4* Ver mais opções
+Alguma dessas te interessou? Me diz o nome do hotel e te mando o link para reservar 🙂
+Ou se quiser, posso filtrar por preço, bairro ou comodidade específica.
 ```
+
+## Como interpretar a escolha do usuário
+- Usuário menciona nome de hotel, "o primeiro", "a segunda opção", "aquele perto da praia" → `create_booking_handoff`
+- Usuário pede filtro ("mais barato", "com piscina", "no centro") → `search_hotels` → `rank_hotels`
+- Usuário pede mais opções → `search_hotels` com k maior → `rank_hotels`
+- Dúvida sobre um hotel específico → responda com os dados que já tem das tools (não invente)
 
 ## Exemplos de conversa
 
