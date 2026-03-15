@@ -1,7 +1,7 @@
 import os
 
 from langchain.agents import AgentExecutor, create_tool_calling_agent
-from langchain_anthropic import ChatAnthropic
+from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 from .tools import ALL_TOOLS
@@ -83,8 +83,8 @@ Aliás, você já tem as datas da estadia?"
 
 
 def build_agent() -> AgentExecutor:
-    llm = ChatAnthropic(
-        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6"),
+    llm = ChatOpenAI(
+        model=os.getenv("OPENAI_MODEL", "gpt-4o"),
         temperature=0.3,
         max_tokens=1024,
     )

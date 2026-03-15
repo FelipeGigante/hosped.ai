@@ -74,7 +74,7 @@ Evolution API  ──webhook──►  FastAPI
                                 ↓
                       In-memory Session
                                 ↓
-                     LangChain Agent (Claude)
+                     LangChain Agent (GPT-4o)
                          ↓  bind_tools
                     ┌────┴─────────────────────┐
                     │         Tools             │
@@ -104,8 +104,8 @@ Isso evita alucinação, garante rastreabilidade e mantém a confiança do usuá
 
 | Camada | Tecnologia | Por quê |
 |---|---|---|
-| LLM principal | [Claude claude-sonnet-4-6](https://anthropic.com) via `langchain-anthropic` | Melhor compreensão de linguagem natural em PT-BR |
-| LLM extração | Claude Haiku (rápido e barato) | Structured output para `TripIntent` |
+| LLM principal | GPT-4o via `langchain-openai` | Tool calling robusto e ótima compreensão de PT-BR |
+| LLM extração | GPT-4o-mini (rápido e barato) | Structured output para `TripIntent` |
 | Agent framework | [LangChain](https://langchain.com) — `create_tool_calling_agent` + `AgentExecutor` | Tool calling nativo, prompt engineering, orquestração |
 | Busca semântica | [FAISS](https://github.com/facebookresearch/faiss) + `sentence-transformers` | RAG local, sem infra extra, funciona em PT-BR |
 | Embeddings | `paraphrase-multilingual-MiniLM-L12-v2` | Multilingual, ~120MB, gratuito, roda in-process |
@@ -186,7 +186,7 @@ Veja [SETUP.md](./SETUP.md) para instruções completas.
 
 **TL;DR:**
 ```bash
-cp .env.example .env   # adicione sua ANTHROPIC_API_KEY
+cp .env.example .env   # adicione sua OPENAI_API_KEY
 docker compose up --build
 ```
 

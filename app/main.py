@@ -35,10 +35,10 @@ async def health():
     return {"status": "ok"}
 
 
-@app.post("/webhook")
-async def webhook(request: Request, background_tasks: BackgroundTasks):
-    """Receives Evolution API webhook and dispatches processing in background."""
+async def webhook(request: Request, background_tasks: BackgroundTasks, event_path: str = ""):
+    """Receives Evolution API webhook — handles both /webhook and /webhook/{event} paths."""
     payload = await request.json()
+    logger.info("Webhook received: event=%s path=%s", payload.get("event"), event_path)
     parsed = parse_inbound(payload)
 
     if not parsed:
@@ -47,6 +47,9 @@ async def webhook(request: Request, background_tasks: BackgroundTasks):
     user_id, text = parsed
     background_tasks.add_task(_process, user_id, text)
     return JSONResponse({"status": "accepted"})
+
+app.add_api_route("/webhook", webhook, methods=["POST"])
+app.add_api_route("/webhook/{event_path:path}", webhook, methods=["POST"])
 
 
 async def _process(user_id: str, text: str) -> None:

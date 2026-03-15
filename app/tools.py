@@ -3,15 +3,15 @@ import os
 from pathlib import Path
 from typing import Optional
 
-from langchain_anthropic import ChatAnthropic
+from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
 from pydantic import BaseModel, Field
 
 DATA_DIR = Path(__file__).parent / "data"
 
 # Cheap/fast model for structured extraction inside tools
-_extraction_llm = ChatAnthropic(
-    model="claude-haiku-4-5-20251001",
+_extraction_llm = ChatOpenAI(
+    model="gpt-4o-mini",
     temperature=0,
 )
 
