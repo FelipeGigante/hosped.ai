@@ -51,7 +51,7 @@ jobs:
             --cpu=1 \
             --timeout=60 \
             --set-secrets="OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,HOTELBEDS_API_KEY=HOTELBEDS_API_KEY:latest,HOTELBEDS_API_SECRET=HOTELBEDS_API_SECRET:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest" \
-            --set-env-vars="ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_INSTANCE=hospedai,TRANSFORMERS_OFFLINE=1,HF_DATASETS_OFFLINE=1" \
+            --set-env-vars="ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_INSTANCE=hospedai,EVOLUTION_API_URL=http://34.151.240.248:8080,TRANSFORMERS_OFFLINE=1,HF_DATASETS_OFFLINE=1" \
             --project=$PROJECT_ID
 
       - name: Show service URL
