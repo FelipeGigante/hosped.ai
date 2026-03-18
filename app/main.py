@@ -21,8 +21,6 @@ _agent_executor = None
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global _agent_executor
-    from .vector_store import get_store
-    get_store()
     _agent_executor = build_agent()
     logger.info("Agent ready")
     yield

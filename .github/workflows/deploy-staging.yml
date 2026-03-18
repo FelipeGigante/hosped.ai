@@ -4,18 +4,59 @@ on:
   push:
     branches: [develop]
 
+env:
+  PROJECT_ID: zarpa-hacka
+  REGION: us-central1
+  SERVICE: hosped-ai
+  REPO: us-central1-docker.pkg.dev/zarpa-hacka/hosped-ai
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
-      - name: Deploy via SSH (staging)
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
         with:
-          host: ${{ secrets.DEPLOY_HOST_STAGING }}
-          username: ${{ secrets.DEPLOY_USER }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          script: |
-            cd /opt/hospedai-staging
-            git pull origin develop
-            docker compose up -d --build app
-            docker image prune -f
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+
+      - name: Build and push Docker image
+        run: |
+          IMAGE="$REPO/app:${{ github.sha }}"
+          docker build --tag "$IMAGE" --tag "$REPO/app:staging-latest" .
+          docker push "$IMAGE"
+          docker push "$REPO/app:staging-latest"
+
+      - name: Deploy to Cloud Run
+        run: |
+          gcloud run deploy $SERVICE \
+            --image="$REPO/app:${{ github.sha }}" \
+            --region=$REGION \
+            --platform=managed \
+            --allow-unauthenticated \
+            --min-instances=0 \
+            --max-instances=5 \
+            --memory=1Gi \
+            --cpu=1 \
+            --timeout=60 \
+            --set-secrets="OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,HOTELBEDS_API_KEY=HOTELBEDS_API_KEY:latest,HOTELBEDS_API_SECRET=HOTELBEDS_API_SECRET:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest" \
+            --set-env-vars="ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_INSTANCE=hospedai" \
+            --project=$PROJECT_ID
+
+      - name: Show service URL
+        run: |
+          gcloud run services describe $SERVICE \
+            --region=$REGION \
+            --format='value(status.url)' \
+            --project=$PROJECT_ID

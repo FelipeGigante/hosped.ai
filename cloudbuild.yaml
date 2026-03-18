@@ -15,7 +15,7 @@
 substitutions:
   _ENV: staging
   _REGION: us-central1
-  _SERVICE: hosped-ai-staging
+  _SERVICE: hosped-ai
   _REPO: us-central1-docker.pkg.dev/$PROJECT_ID/hosped-ai
 
 options:
@@ -63,8 +63,8 @@ steps:
       - --memory=1Gi
       - --cpu=1
       - --timeout=60
-      - --set-secrets=OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest,REDIS_URL=REDIS_URL_STAGING:latest,DATABASE_URL=DATABASE_URL_STAGING:latest
-      - --set-env-vars=ENV=staging,AMADEUS_ENV=test,HOTELBEDS_ENV=test
+      - --set-secrets=OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,HOTELBEDS_API_KEY=HOTELBEDS_API_KEY:latest,HOTELBEDS_API_SECRET=HOTELBEDS_API_SECRET:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest
+      - --set-env-vars=ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_API_URL=http://evolution:8080,EVOLUTION_INSTANCE=hospedai
     waitFor: [push]
 
 images:
