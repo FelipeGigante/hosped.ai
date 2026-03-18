@@ -8,6 +8,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 
 from .agent import build_agent
 from .guardrails import GuardrailError, validate_input, validate_output
+from .memory.profile_store import format_profile_context, load_profile, upsert_profile
 from .session import load_history, save_history, load_state, save_state
 from .whatsapp import parse_inbound, send_message, send_typing
 
@@ -27,12 +28,12 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="hosped.ai", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="hosped.ai", version="0.2.0", lifespan=lifespan)
 
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    return {"status": "ok", "version": "0.2.0"}
 
 
 async def webhook(request: Request, background_tasks: BackgroundTasks, event_path: str = ""):
@@ -50,7 +51,7 @@ app.add_api_route("/webhook/{event_path:path}", webhook, methods=["POST"])
 
 
 def _format_state_context(state: dict) -> str:
-    """Format trip state as context block injected into agent input."""
+    """Format current trip state as context block injected into agent input."""
     parts = []
     if state.get("destination"):
         parts.append(f"• Destino: {state['destination']}")
@@ -106,47 +107,81 @@ def _update_state(state: dict, intermediate_steps: list) -> dict:
             if key not in state["errors_shown"]:
                 state["errors_shown"].append(key)
 
-        elif tool_name == "confirm_booking" and isinstance(result, dict):
+        elif tool_name == "search_hotels" and isinstance(result, dict) and "fonte" in result:
+            state["inventory_source"] = result["fonte"]
+
+        elif tool_name == "create_booking_handoff" and isinstance(result, dict):
             if result.get("hotel_name"):
                 state["confirmed_hotel_id"] = result.get("hotel_id", "")
                 state["confirmed_hotel_name"] = result["hotel_name"]
+                state["phase"] = "confirmed"
+
+        elif tool_name == "book_hotel" and isinstance(result, dict):
+            if result.get("booking_confirmed"):
+                state["confirmed_hotel_name"] = state.get("confirmed_hotel_name", "")
+                state["booking_reference"] = result.get("booking_id", "")
                 state["phase"] = "confirmed"
 
     return state
 
 
 async def _process(user_id: str, text: str) -> None:
-    """Full pipeline: guardrail → agent → guardrail → respond."""
+    """Full pipeline: guardrail → load profile + session → agent → guardrail → respond."""
     try:
+        # 1. Input guardrail (no LLM, cheap)
         try:
             clean_text = validate_input(text)
         except GuardrailError as e:
             await send_message(user_id, e.user_message)
             return
 
+        # 2. Load session (Redis / in-memory)
         history = load_history(user_id)
         state = load_state(user_id)
 
+        # 3. Load persistent profile (PostgreSQL — personalization layer)
+        profile = await load_profile(user_id)
+        profile_context = format_profile_context(profile)
+
+        # 4. Show typing indicator
         await send_typing(user_id, duration_ms=2000)
 
+        # 5. Build agent input = message + profile context + trip state context
         state_context = _format_state_context(state)
-        agent_input = clean_text + state_context if state_context else clean_text
+        agent_input = clean_text
+        if profile_context:
+            agent_input += f"\n\n{profile_context}"
+        if state_context:
+            agent_input += state_context
 
+        # 6. Run agent
         result = _agent_executor.invoke({
             "input": agent_input,
             "chat_history": history,
         })
 
         response = result.get("output", "Desculpe, tive um problema interno. Pode repetir? 🙏")
+
+        # 7. Output guardrail
         response = validate_output(response)
 
+        # 8. Update session state
         updated_state = _update_state(state, result.get("intermediate_steps", []))
         save_state(user_id, updated_state)
 
+        # 9. Update history (keep last 20 messages)
         history.append(HumanMessage(content=clean_text))
         history.append(AIMessage(content=response))
         save_history(user_id, history[-20:])
 
+        # 10. Update profile: last seen + preferences from this interaction
+        await upsert_profile(user_id, {
+            "phone": user_id.split("@")[0],
+            "preferred_trip_types": [updated_state["trip_type"]] if updated_state.get("trip_type") else [],
+            "preferred_amenities": updated_state.get("preferences", []),
+        })
+
+        # 11. Send response
         await send_message(user_id, response)
 
     except Exception:

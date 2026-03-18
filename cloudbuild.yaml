@@ -1,0 +1,75 @@
+# Cloud Build — develop branch → staging environment
+#
+# Deploy automático SEM precisar abrir PR para main.
+# Trigger configurado no GCP para: push na branch 'develop'
+#
+# Setup (1 vez só, via gcloud CLI):
+#   gcloud builds triggers create github \
+#     --repo-name=hosped.ai \
+#     --repo-owner=<seu-usuario-github> \
+#     --branch-pattern=^develop$ \
+#     --build-config=cloudbuild.yaml \
+#     --project=hosped-ai-staging \
+#     --substitutions=_ENV=staging,_REGION=us-central1,_SERVICE=hosped-ai-staging
+
+substitutions:
+  _ENV: staging
+  _REGION: us-central1
+  _SERVICE: hosped-ai-staging
+  _REPO: us-central1-docker.pkg.dev/$PROJECT_ID/hosped-ai
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_MEDIUM
+
+steps:
+  # 1. Build Docker image
+  - name: gcr.io/cloud-builders/docker
+    id: build
+    args:
+      - build
+      - --tag=$_REPO/app:$COMMIT_SHA
+      - --tag=$_REPO/app:staging-latest
+      - --cache-from=$_REPO/app:staging-latest
+      - --build-arg=BUILDKIT_INLINE_CACHE=1
+      - .
+    env:
+      - DOCKER_BUILDKIT=1
+
+  # 2. Push para Artifact Registry
+  - name: gcr.io/cloud-builders/docker
+    id: push
+    args:
+      - push
+      - --all-tags
+      - $_REPO/app
+    waitFor: [build]
+
+  # 3. Deploy no Cloud Run (staging)
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    id: deploy
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - $_SERVICE
+      - --image=$_REPO/app:$COMMIT_SHA
+      - --region=$_REGION
+      - --platform=managed
+      - --allow-unauthenticated
+      - --min-instances=0
+      - --max-instances=5
+      - --concurrency=40
+      - --memory=1Gi
+      - --cpu=1
+      - --timeout=60
+      - --set-secrets=OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest,REDIS_URL=REDIS_URL_STAGING:latest,DATABASE_URL=DATABASE_URL_STAGING:latest
+      - --set-env-vars=ENV=staging,AMADEUS_ENV=test,HOTELBEDS_ENV=test
+    waitFor: [push]
+
+images:
+  - $_REPO/app:$COMMIT_SHA
+  - $_REPO/app:staging-latest
+
+# Notifica no Cloud Build — status aparece no PR do GitHub
+# (configure GitHub App no GCP para isso)

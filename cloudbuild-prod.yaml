@@ -1,0 +1,66 @@
+# Cloud Build — main branch → production environment
+#
+# Só roda quando main receber um push.
+# Futuro: quando você estiver pronto para abrir o PR da develop → main.
+#
+# Setup (1 vez só):
+#   gcloud builds triggers create github \
+#     --repo-name=hosped.ai \
+#     --repo-owner=<seu-usuario-github> \
+#     --branch-pattern=^main$ \
+#     --build-config=cloudbuild-prod.yaml \
+#     --project=hosped-ai-prod \
+#     --substitutions=_ENV=production,_REGION=us-central1,_SERVICE=hosped-ai
+
+substitutions:
+  _ENV: production
+  _REGION: us-central1
+  _SERVICE: hosped-ai
+  _REPO: us-central1-docker.pkg.dev/$PROJECT_ID/hosped-ai
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_STANDARD_2
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    id: build
+    args:
+      - build
+      - --tag=$_REPO/app:$COMMIT_SHA
+      - --tag=$_REPO/app:latest
+      - --cache-from=$_REPO/app:latest
+      - --build-arg=BUILDKIT_INLINE_CACHE=1
+      - .
+    env:
+      - DOCKER_BUILDKIT=1
+
+  - name: gcr.io/cloud-builders/docker
+    id: push
+    args: [push, --all-tags, $_REPO/app]
+    waitFor: [build]
+
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    id: deploy
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - $_SERVICE
+      - --image=$_REPO/app:$COMMIT_SHA
+      - --region=$_REGION
+      - --platform=managed
+      - --allow-unauthenticated
+      - --min-instances=1
+      - --max-instances=20
+      - --concurrency=40
+      - --memory=2Gi
+      - --cpu=2
+      - --timeout=60
+      - --set-secrets=OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest,HOTELBEDS_API_KEY=HOTELBEDS_API_KEY:latest,HOTELBEDS_API_SECRET=HOTELBEDS_API_SECRET:latest,REDIS_URL=REDIS_URL:latest,DATABASE_URL=DATABASE_URL:latest
+      - --set-env-vars=ENV=production,AMADEUS_ENV=production,HOTELBEDS_ENV=production
+    waitFor: [push]
+
+images:
+  - $_REPO/app:$COMMIT_SHA
+  - $_REPO/app:latest
