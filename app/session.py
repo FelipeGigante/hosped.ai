@@ -16,7 +16,7 @@ from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 
 logger = logging.getLogger(__name__)
 
-_TTL = int(os.getenv("SESSION_TTL_SECONDS", "86400"))  # 24h default
+_TTL = int(os.getenv("SESSION_TTL_SECONDS", "900"))  # 15 min inactivity default
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Redis client (lazy init, optional)

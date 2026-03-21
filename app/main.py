@@ -1,5 +1,8 @@
+import asyncio
 import json
 import logging
+import random
+import re
 from contextlib import asynccontextmanager
 
 from fastapi import BackgroundTasks, FastAPI, Request
@@ -9,13 +12,40 @@ from langchain_core.messages import AIMessage, HumanMessage
 from .agent import build_agent
 from .guardrails import GuardrailError, validate_input, validate_output
 from .memory.profile_store import format_profile_context, load_profile, upsert_profile
+from .queue import enqueue
 from .session import load_history, save_history, load_state, save_state
 from .whatsapp import parse_inbound, send_message, send_typing
+from .worker import run_worker
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
 
 _agent_executor = None
+
+# ---------------------------------------------------------------------------
+# Greeting fast path — respond in <2 s without touching the LLM
+# ---------------------------------------------------------------------------
+_EXACT_GREETINGS = frozenset([
+    "oi", "olá", "ola", "hey", "hi", "hello", "e aí", "eai", "opa",
+    "bom dia", "boa tarde", "boa noite", "tudo bem", "tudo bom",
+    "tudo", "oi tudo bem", "oi tudo bom",
+])
+_GREETING_RE = re.compile(
+    r"^(oi|ol[aá]|hey|hi|hello|e\s?a[ií]|opa|bom\s?dia|boa\s?tarde|boa\s?noite"
+    r"|tudo\s?(bem|bom)?)[!?.,\s]*$",
+    re.IGNORECASE | re.UNICODE,
+)
+_GREETING_RESPONSES = [
+    "Oi! 🦜 Sou o Zeca, da Zarpa. Pra onde você tá pensando em ir?",
+    "Olá! Sou o Zeca, maritaca da Zarpa 🦜 Qual é o destino da sua próxima viagem?",
+    "Boa! Sou o Zeca 🦜 Pronto pra encontrar a hospedagem perfeita pra você. Qual cidade?",
+    "Ei, chegou na hora certa! 🦜 Sou o Zeca da Zarpa. Me conta: pra onde vai?",
+]
+
+
+def _is_greeting(text: str) -> bool:
+    t = text.strip().lower()
+    return t in _EXACT_GREETINGS or bool(_GREETING_RE.match(t))
 
 
 @asynccontextmanager
@@ -23,7 +53,15 @@ async def lifespan(app: FastAPI):
     global _agent_executor
     _agent_executor = build_agent()
     logger.info("Agent ready")
-    yield
+    worker_task = asyncio.create_task(run_worker(_process))
+    try:
+        yield
+    finally:
+        worker_task.cancel()
+        try:
+            await worker_task
+        except asyncio.CancelledError:
+            pass
 
 
 app = FastAPI(title="hosped.ai", version="0.2.0", lifespan=lifespan)
@@ -41,7 +79,19 @@ async def webhook(request: Request, background_tasks: BackgroundTasks, event_pat
     if not parsed:
         return JSONResponse({"status": "ignored"})
     user_id, text = parsed
-    background_tasks.add_task(_process, user_id, text)
+
+    # Fast path: greetings bypass the LLM entirely
+    if _is_greeting(text):
+        logger.info("Greeting fast path for %s", user_id)
+        background_tasks.add_task(send_message, user_id, random.choice(_GREETING_RESPONSES))
+        return JSONResponse({"status": "accepted", "path": "greeting"})
+
+    # Enqueue to Redis when available (multi-instance safe); fallback to BackgroundTasks
+    if enqueue(user_id, text):
+        logger.info("Enqueued message for %s", user_id)
+    else:
+        background_tasks.add_task(_process, user_id, text)
+
     return JSONResponse({"status": "accepted"})
 
 app.add_api_route("/webhook", webhook, methods=["POST"])

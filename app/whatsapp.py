@@ -18,8 +18,21 @@ _SEEN_TTL = 60  # seconds
 
 
 def _is_duplicate(message_id: str) -> bool:
+    # Try Redis first — cross-instance dedup when multiple Cloud Run instances are running
+    try:
+        from .session import _get_redis
+        r = _get_redis()
+        if r:
+            key = f"msg:seen:{message_id}"
+            if r.exists(key):
+                return True
+            r.setex(key, _SEEN_TTL, "1")
+            return False
+    except Exception:
+        pass
+
+    # Fallback: in-memory dedup (single instance / no Redis)
     now = time.monotonic()
-    # Evict old entries
     expired = [k for k, t in _seen_ids.items() if now - t > _SEEN_TTL]
     for k in expired:
         del _seen_ids[k]
@@ -39,7 +52,7 @@ async def send_message(to: str, text: str) -> dict:
     number = _jid_to_number(to)
     url = f"{EVOLUTION_URL}/message/sendText/{EVOLUTION_INSTANCE}"
     headers = {"apikey": EVOLUTION_KEY, "Content-Type": "application/json"}
-    payload = {"number": number, "text": text, "delay": 1200}
+    payload = {"number": number, "text": text, "delay": 500}
 
     async with httpx.AsyncClient(timeout=30) as client:
         resp = await client.post(url, json=payload, headers=headers)

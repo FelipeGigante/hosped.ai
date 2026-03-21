@@ -126,7 +126,8 @@ def _normalize_city(name: str) -> str:
 @tool
 def extract_trip_intent(message: str) -> str:
     """Extrai intenção de viagem estruturada de uma mensagem em linguagem natural.
-    Chame sempre que o usuário descrever detalhes da viagem (nova busca ou refinamento).
+    Chame SOMENTE quando a mensagem mencionar explicitamente pelo menos um de: cidade/destino, datas, número de hóspedes ou orçamento.
+    NÃO chame para saudações, perguntas genéricas ou mensagens sem dados de viagem.
     Retorna JSON com campos extraídos — campos não mencionados ficam null."""
     structured_llm = _extraction_llm.with_structured_output(TripIntent)
     try:

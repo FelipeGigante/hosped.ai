@@ -62,10 +62,10 @@ class LiteapiProvider:
 
         headers = {"X-API-Key": self.api_key, "Content-Type": "application/json"}
 
-        # Step 1: list hotels in city
+        # Step 1: list hotels in city — Liteapi requires title-case city name
         r = httpx.get(
             f"{_BASE}/data/hotels",
-            params={"countryCode": "BR", "cityName": inp.destination, "limit": 30},
+            params={"countryCode": "BR", "cityName": inp.destination.title(), "limit": 30},
             headers=headers,
             timeout=15,
         )
@@ -109,11 +109,22 @@ class LiteapiProvider:
                 if not room_types:
                     continue
 
-                # Find cheapest room type by offerRetailRate
+                # Find cheapest room type — handle Liteapi v3.0 rate structure
                 def _price(rt: dict) -> float:
+                    # v3.0: roomType.rates[].retailRate.total[].amount
+                    rates = rt.get("rates", [])
+                    if rates:
+                        retail = rates[0].get("retailRate", {})
+                        total = retail.get("total", [])
+                        if isinstance(total, list) and total:
+                            return float(total[0].get("amount", 9999))
+                        if isinstance(total, dict):
+                            return float(total.get("amount", 9999))
+                    # Legacy fallback
                     return float(rt.get("offerRetailRate", {}).get("amount", 9999))
 
                 best_room = min(room_types, key=_price)
+                offer_id = best_room.get("offerId")  # required for book_hotel
                 price_total = _price(best_room)
                 price_night = price_total / nights
 
@@ -142,6 +153,7 @@ class LiteapiProvider:
                     link_reserva=meta.get("websiteUrl", f"https://www.booking.com/searchresults.pt-br.html?ss={inp.destination}"),
                     telefone=meta.get("phoneNumber"),
                     fonte="liteapi",
+                    offer_id=offer_id,
                 ))
             except Exception:
                 logger.debug("Skipping malformed Liteapi hotel", exc_info=True)

@@ -123,8 +123,8 @@ class HotelbedsProvider:
             "stay": {"checkIn": checkin, "checkOut": checkout},
             "occupancies": [{"rooms": 1, "adults": inp.guests, "children": 0}],
             "destination": {"code": dest_code},
-            "filter": {"maxHotels": 25, "maxRate": inp.budget_per_night * 1.3},
-            "reviews": [{"type": "TRIPADVISOR", "minReviewRating": 0, "minReviews": 0}],
+            "filter": {"maxHotels": 25},  # maxRate removed — currency ambiguity causes 400
+            "language": "ENG",            # required by test environment
         }
 
         r = httpx.post(
@@ -157,17 +157,10 @@ class HotelbedsProvider:
                 facilities = item.get("facilities", [])
                 amenities = [f.get("facilityName", "").lower() for f in facilities[:10]]
 
-                # Hotelbeds rating: categorySimpleCode = "3EST", "4EST", "5EST"
-                cat = item.get("categorySimpleCode", "")
+                # Hotelbeds rating: categoryCode = "3EST", "4EST", "5EST"
+                cat = item.get("categoryCode", "") or item.get("categorySimpleCode", "")
                 stars = int(cat[0]) if cat and cat[0].isdigit() else 3
                 nota = min(10.0, stars * 2.0)
-
-                # Try to get review score
-                reviews = item.get("reviews", [])
-                if reviews:
-                    review_score = float(reviews[0].get("rate", 0))
-                    if review_score > 0:
-                        nota = min(10.0, review_score / 10.0)
 
                 address = item.get("address", {})
                 bairro = address.get("content", inp.destination) if isinstance(address, dict) else inp.destination

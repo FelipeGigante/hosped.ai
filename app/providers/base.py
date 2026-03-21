@@ -27,6 +27,7 @@ class HotelResult(BaseModel):
     link_reserva: str = ""
     telefone: str | None = None
     fonte: Literal["amadeus", "liteapi", "local"] = "local"
+    offer_id: str | None = None  # Liteapi offerId — required for book_hotel
 
 
 @runtime_checkable
