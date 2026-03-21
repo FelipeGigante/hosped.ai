@@ -23,7 +23,7 @@ services:
       - "8080:8080"
     environment:
       - AUTHENTICATION_API_KEY=${EVOLUTION_API_KEY}
-      - WEBHOOK_GLOBAL_URL=http://app:8000/webhook
+      - WEBHOOK_GLOBAL_URL=https://hosped-ai-967694471615.us-central1.run.app/webhook
       - WEBHOOK_GLOBAL_ENABLED=true
       - WEBHOOK_EVENTS_MESSAGES_UPSERT=true
       - DATABASE_ENABLED=true

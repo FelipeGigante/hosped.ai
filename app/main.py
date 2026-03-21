@@ -100,7 +100,7 @@ def _update_state(state: dict, intermediate_steps: list) -> dict:
                 state["preferences"] = result["preferences"]
 
         elif tool_name == "search_hotels" and isinstance(result, dict) and "error" in result:
-            dest = state.get("destination", "desconhecido")
+            dest = state.get("destination") or "desconhecido"
             key = f"no_hotels_{dest.lower().replace(' ', '_')}"
             if key not in state["errors_shown"]:
                 state["errors_shown"].append(key)
@@ -172,15 +172,15 @@ async def _process(user_id: str, text: str) -> None:
         history.append(AIMessage(content=response))
         save_history(user_id, history[-20:])
 
-        # 10. Update profile: last seen + preferences from this interaction
+        # 10. Send response ASAP — before any non-critical I/O
+        await send_message(user_id, response)
+
+        # 11. Update profile: last seen + preferences from this interaction (non-blocking path)
         await upsert_profile(user_id, {
             "phone": user_id.split("@")[0],
             "preferred_trip_types": [updated_state["trip_type"]] if updated_state.get("trip_type") else [],
             "preferred_amenities": updated_state.get("preferences", []),
         })
-
-        # 11. Send response
-        await send_message(user_id, response)
 
     except Exception:
         logger.exception("Unhandled error for user %s", user_id)

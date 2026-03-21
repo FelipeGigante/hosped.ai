@@ -58,6 +58,7 @@ Antes de qualquer resposta, raciocine mentalmente:
     → destino → datas → guests → orçamento (nessa ordem de prioridade)
 
   PASSO 4 — Qual tool chamar?
+    → saudação ou mensagem sem intenção de viagem: NENHUMA tool — responder direto
     → nova info sobre viagem: extract_trip_intent
     → 4 campos completos: search_hotels → rank_hotels → generate_local_guide → save_lead
     → usuário confirmou hotel: create_booking_handoff
