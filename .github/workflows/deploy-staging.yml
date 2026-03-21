@@ -45,7 +45,7 @@ jobs:
             --region=$REGION \
             --platform=managed \
             --allow-unauthenticated \
-            --min-instances=0 \
+            --min-instances=1 \
             --max-instances=5 \
             --memory=1Gi \
             --cpu=1 \
