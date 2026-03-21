@@ -64,7 +64,7 @@ steps:
       - --cpu=1
       - --timeout=60
       - --set-secrets=OPENAI_API_KEY=OPENAI_API_KEY:latest,LITEAPI_KEY=LITEAPI_KEY:latest,HOTELBEDS_API_KEY=HOTELBEDS_API_KEY:latest,HOTELBEDS_API_SECRET=HOTELBEDS_API_SECRET:latest,EVOLUTION_API_KEY=EVOLUTION_API_KEY:latest
-      - --set-env-vars=ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_API_URL=http://evolution:8080,EVOLUTION_INSTANCE=hospedai
+      - --set-env-vars=ENV=staging,HOTELBEDS_ENV=test,OPENAI_MODEL=gpt-4o,OPENAI_MODEL_EXTRACTION=gpt-4o-mini,EVOLUTION_API_URL=http://evolution:8080,EVOLUTION_INSTANCE=hospedai,OPENAI_MODEL=gpt-5.4-nano,OPENAI_MODEL_EXTRACTION=gpt-5.4-nano
     waitFor: [push]
 
 images:
